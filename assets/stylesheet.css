@@ -15,7 +15,7 @@ html {
 
 h1 {
     font-size: 48px;
-    text-indent: 20%;
+
     flex-wrap: wrap;
     color: var(--salmon-red);
     text-shadow: 2px 2px 4px var(--dark-blue);
@@ -29,27 +29,12 @@ h2 {
     text-shadow: 2px 2px 4px var(--dark-blue);
 }
 
-ul {
-    list-style: none;
-}
-li {
-    border: 1px solid var(--dark-blue);
-    border-radius: 20px;
-    background-color: var(--dark-blue);
-    
-}
-
 a {
     text-decoration: none;
-}
-
-a:link {
     color: antiquewhite;
 }
 
-li:hover {
-    box-shadow: 2px 2px 6px var(--dark-blue);
-}
+
 
 a:visited {
     color: antiquewhite;
@@ -67,9 +52,41 @@ padding-top: 10px;
 
 ul#links-list li{
 display: inline;
-border: 1px solid var(--dark-blue);
+border: 1px solid antiquewhite;
 border-radius: 20px;
 background-color: var(--dark-blue);
-padding: 4px 4px 4px 4px;
+padding: 6px 6px 6px 6px;
 margin-right: 30px;
+}
+
+ul#links-list li:hover{
+    box-shadow: 2px 2px 4px var(--dark-blue);
+}
+
+.h1-indent {
+    text-indent: 20%;
+}
+
+.h2-indent {
+    text-indent: 30%;
+}
+
+ul#about-list {
+    list-style: none;
+    padding-top: 10px;
+}
+
+ul#about-list li{
+    position: relative;
+    display: inline;
+    border: 1px solid antiquewhite;
+    color: var(--dark-blue);
+    background-color: var(--salmon-red);
+    padding: 6px 6px 6px 6px;
+    margin-right: 30px;
+}
+
+ul#about-list li:hover{
+    box-shadow: 2px 2px 4px var(--dark-blue);
+    cursor:default;
 }
