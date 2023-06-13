@@ -98,6 +98,11 @@ a:visited {
     justify-content: center;
 }
 
+.h2-p3 {
+        width: 100%;
+        text-indent: 10%;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -105,26 +110,27 @@ a:visited {
     align-items:center;
 }
 
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-
 .refactoring {
-    flex: 0 0 300px;
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
     text-shadow: 2px 2px 3px var(--dark-blue);
     background-image: url(./Landing\ Page\ 1.jpg);
     width: 955px;
     height: 486px;
     font-size: 30px;
-    box-shadow: 4px 4px var(--dark-blue);
-    padding: 486px 955px;
+    box-shadow: 4px 4px var(--dark-blue);;
     margin-bottom: 30px;
 }
 
 .second-project {
-    flex: 0 0 300px;
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 1100px;
+    justify-content: center;
+    text-align: center;
     text-shadow: 2px 2px 3px var(--dark-blue);
     background-image: url(./Landing\ Page\ 1.jpg);
     width: 955px;
@@ -134,6 +140,10 @@ a:visited {
 }
 
 .refactoring:hover {
+    box-shadow: 4px 4px var(--dark-blue), 6px 6px antiquewhite;
+}
+
+.second-project:hover {
     box-shadow: 4px 4px var(--dark-blue), 6px 6px antiquewhite;
 }
 
@@ -156,25 +166,48 @@ ul#links-list li:hover{
     box-shadow: 2px 2px 4px var(--dark-blue);
 }
 
-ul#about-list {
+ul#links-about {
     list-style: none;
     padding-top: 10px;
 }
 
-ul#about-list li{
-    position: relative;
+ul#links-about li{
     display: inline;
+    position: relative;
     border: 1px solid antiquewhite;
-    color: var(--dark-blue);
-    background-color: var(--salmon-red);
+    border-radius: 20px;
+    background-color: var(--dark-blue);
     padding: 6px 6px 6px 6px;
     margin-right: 30px;
+    font-size: 48px;
+    color: antiquewhite;
 }
 
 ul#about-list li:hover{
     box-shadow: 2px 2px 4px var(--dark-blue);
     cursor:default;
 }
+
+ul#links-contact {
+    list-style: none;
+    padding-top: 10px;
+}
+
+ul#links-contact li{
+    display: inline;
+    position: relative;
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    background-color: var(--dark-blue);
+    padding: 6px 6px 6px 6px;
+    margin-right: 30px;
+    font-size: 48px;
+}
+
+ul#links-contact li:hover{
+    box-shadow: 2px 2px 4px var(--dark-blue);
+}
+
 
 @media screen and (max-width: 768px) {
     body {
