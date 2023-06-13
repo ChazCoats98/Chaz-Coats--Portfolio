@@ -39,7 +39,7 @@ h1 {
     color: var(--salmon-red);
     text-shadow: 2px 2px antiquewhite, 4px 5px 4px var(--dark-blue);
 }
-
+ 
 h2 {
     font-size: 36px;
     text-indent: 30%;
