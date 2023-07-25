@@ -85,8 +85,7 @@ a:visited {
     margin-left: 30%;
 }
 
-.h1-p2 {
-    position: fixed;    
+.h1-p2 {    
     padding: 4px 8px 8px 8px;
     margin-left: 20%;
     transform: matrix(1, -.06, 0, 1, 0, 0);
@@ -94,7 +93,6 @@ a:visited {
 .h2-p2 {
     margin-top: 5%;
     width: 100%;
-    position: fixed;
     justify-content: center;
 }
 
