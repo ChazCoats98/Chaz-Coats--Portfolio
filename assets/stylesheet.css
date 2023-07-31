@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -32,13 +34,7 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
-    
-h1 {
-    font-size: 48px;
-    flex-wrap: wrap;
-    color: var(--salmon-red);
-    text-shadow: 2px 2px antiquewhite, 4px 5px 4px var(--dark-blue);
-}
+
  
 h2 {
     font-size: 36px;
@@ -55,6 +51,31 @@ a {
 
 a:visited {
     color: antiquewhite;
+}
+
+.headerBody {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+}
+
+.headerTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60%;
+    width: 80%;
+    border-bottom: .5mm ridge gray;
+}
+
+.headerText {
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: white;
+    align-items: center;
 }
 
 .p1-list {
