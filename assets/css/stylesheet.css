@@ -5,17 +5,30 @@
 }
 
 html {
-    background-image: url(./images/Background\ 3.jpeg);
+    background-image: url("./Background\ 3.jpeg");
     background-size: 1920px 1080px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
+    padding-top: 140px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+}
+
+#headerBody {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    transition: top .3s ease-in-out;
 }
 
 .headerBody {
@@ -27,15 +40,12 @@ body {
     justify-content: center;
     width: 100%;
     height: 140px;
-    transition: transform .3s;
+    transition: top .3s ease-in-out;
 }
 
-.scrollDown .headerBody {
-transform: translate3d(0, -100%, 0);
-}
 
-.scrollUp .headerBody {
-    transform: none;
+.scrollUp {
+    top: -140px;
 }
 
 .headerTop {
@@ -115,6 +125,17 @@ transform: translate3d(0, -100%, 0);
     transform: scaleX(1);
 }
 
+#headerBody {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    transition: top .3s ease-in-out;
+}
 
 
 @media screen and (max-width: 768px) {
