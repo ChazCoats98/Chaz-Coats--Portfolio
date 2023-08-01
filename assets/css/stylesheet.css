@@ -19,18 +19,6 @@ body {
     justify-content: flex-start;
 }
 
-#headerBody {
-    position: fixed;
-    top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: center;
-    width: 100%;
-    height: 140px;
-    transition: top .3s ease-in-out;
-}
-
 .headerBody {
     position: fixed;
     top: 0px;
@@ -125,21 +113,24 @@ body {
     transform: scaleX(1);
 }
 
-#headerBody {
-    position: fixed;
-    top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: center;
-    width: 100%;
-    height: 140px;
-    transition: top .3s ease-in-out;
+.page1Box {
+    align-items: center;
 }
 
+.aboutMeBox {
+    width: 80%;
+    height: 560px;
+    background-color: aquamarine;
+}
+
+#personalImage {
+    display: flex;
+    width: 329px;
+    height: 470px;
+}
 
 @media screen and (max-width: 768px) {
     body {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
+}
