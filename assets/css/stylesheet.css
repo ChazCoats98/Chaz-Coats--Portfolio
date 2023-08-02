@@ -159,27 +159,17 @@ body {
 }
 
 .moreInfoText {
-display: block;
-float: left;
-text-indent: 20px;
-text-align: justify;
-font-family: 'Cinzel', serif;
-letter-spacing: 1.6px;
-color: white;
-text-shadow: 0 0 8px rgb(87, 83, 83);
-margin: 0;
-padding: 20px;
-width: 60%;
-}
-
-#personalImage {
-    display: flex;
+    display: block;
     float: left;
-    box-shadow: 0 0 10px black;
-    margin: 20px;
-    border-radius: 15px;
-    width: 30%;
-    height: auto;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1.6px;
+    color: white;
+    text-shadow: 0 0 8px rgb(87, 83, 83);
+    margin: 0;
+    padding: 20px;
+    width: 60%;
 }
 
 .scrollBox {
@@ -209,13 +199,47 @@ width: 60%;
     overflow: hidden;
 }
 
-@keyframes moreInfoBox {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+.scrollBarShading {
+    position: absolute;
+    width: 100%;
+    background: #666;
+    top: 0;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
 }
 
-@media only screen and (max-width: 600px){
+.pageNumber {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#personalImage {
+    display: flex;
+    float: left;
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+}
+
+@keyframes moreInfoBox {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .headerText {
         font-size: 30px
     }
@@ -336,4 +360,3 @@ width: 60%;
         letter-spacing: 1.6px;
     }
 }
-
