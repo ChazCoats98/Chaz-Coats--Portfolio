@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     padding-top: 140px;
     display: flex;
@@ -29,6 +28,7 @@ body {
     width: 100%;
     height: 140px;
     transition: top .3s ease-in-out;
+    z-index: 3;
 }
 
 
@@ -46,9 +46,10 @@ body {
 }
 
 .headerText {
+    display: flex;
     font-family: 'Cinzel', serif;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 56px;
     margin-top: 10px;
     color: white;
     align-items: center;
@@ -75,21 +76,19 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    list-style: none;
     padding: 0%;
     margin-top: 0%;
-}
-
-.listInner li {
-    list-style: none;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1.6px;
-    font-size: 20px;
 }
 
 .listText {
     display: inline-block;
     position: relative;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    font-size: 20px;
 }
 
 .listText:hover {
@@ -121,7 +120,7 @@ body {
 .aboutMeBox {
     position: relative;
     display: flex;
-    width: 40%;
+    width: 50%;
     height: 560px;
     margin-top: 100px;
 }
@@ -136,9 +135,16 @@ body {
     width: 100%;
 }
 
+.typedText {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    text-shadow: 0 0 5px grey;
+}
+
 .moreInfoBox {
     position: absolute;
     display: none;
+    align-items: center;
     background-image: url("./Background\ 4.jpg");
     background-size: cover;
     animation-name: moreInfoBox;
@@ -147,8 +153,60 @@ body {
     animation-timing-function: ease-in-out;
     box-shadow: 0 0 10px grey;
     border-radius: 15px;
-    width: 100%;
-    height: 100%;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.moreInfoText {
+display: block;
+float: left;
+text-indent: 20px;
+text-align: justify;
+font-family: 'Cinzel', serif;
+letter-spacing: 1.6px;
+color: white;
+text-shadow: 0 0 8px rgb(87, 83, 83);
+margin: 0;
+padding: 20px;
+width: 60%;
+}
+
+#personalImage {
+    display: flex;
+    float: left;
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+}
+
+.scrollBox {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    right: 50px;
+    z-index: 4;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.scrollBar {
+    height: 160px;
+    width: 1px;
+    background: #b3afaf;
+    position: relative;
+    margin: 10px 0;
+    overflow: hidden;
 }
 
 @keyframes moreInfoBox {
@@ -157,20 +215,125 @@ body {
     100%   { transform: translate(0, -0px); }   
 }
 
-.typedText {
-    font-family: 'Cinzel', serif;
-    font-size: 56px;
-    text-shadow: 0 0 5px grey;
-}
+@media only screen and (max-width: 600px){
+    .headerText {
+        font-size: 30px
+    }
 
-#personalImage {
-    display: flex;
-    width: 329px;
-    height: 470px;
-}
+    .listText {
+        font-size: 18px;
+        padding: 10px;
+    }
 
-@media screen and (max-width: 768px) {
-    body {
-        flex-direction: column;
+    .typedText {
+        font-size: 30px;
+    }
+
+    .aboutMeBox {
+        width: 90%;
+    }
+
+    .moreInfoText {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+        padding: 10px;
+    }
+
+    #personalImage {
+        margin: 10px;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    .headerText {
+        font-size: 50px
+    }
+
+    .listText {
+        font-size: 20px;
+    }
+
+    .typedText {
+        font-size: 46px;
+    }
+
+    .aboutMeBox {
+        width: 90%;
+    }
+
+    .moreInfoText {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .headerText {
+        font-size: 50px
+    }
+
+    .listText {
+        font-size: 20px;
+    }
+
+    .typedText {
+        font-size: 50px;
+    }
+
+    .aboutMeBox {
+        width: 80%;
+    }
+
+    .moreInfoText {
+        font-size: 14px;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .headerText {
+        font-size: 56px
+    }
+
+    .listText {
+        font-size: 20px;
+    }
+
+    .typedText {
+        font-size: 56px;
+    }
+
+    .aboutMeBox {
+        width: 70%;
+    }
+
+    .moreInfoText {
+        font-size: 18px;
+        letter-spacing: 1.6px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .headerText {
+        font-size: 56px
+    }
+
+    .listText {
+        font-size: 20px;
+    }
+
+    .typedText {
+        font-size: 56px;
+    }
+
+    .aboutMeBox {
+        width: 60%;
+    }
+
+    .moreInfoText {
+        font-size: 18px;
+        letter-spacing: 1.6px;
+    }
+}
+

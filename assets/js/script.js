@@ -38,23 +38,23 @@ $(document).ready(function () {
         var typed = new Typed("#hiMessage", {
             strings: ["HI IM CHAZ."],
             startDelay: 1200,
-            typeSpeed: 100,
+            typeSpeed:70,
             loop: false,
             showCursor: false,
             onComplete: function() {
                 var typed = new Typed("#aboutMe", {
                     strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A WRITER.", "I AM A MOVIE FANATIC."],
-                    startDelay: 500,
+                    startDelay: 100,
                     smartBackspace: true,
-                    typeSpeed: 100,
+                    typeSpeed: 70,
                     backSpeed: 50,
                     loop: false,
                     showCursor: false,
                     onComplete: function() {
                         var typed = new Typed("#more", {
                             strings: ["WANT TO KNOW MORE?"],
-                            startDelay: 500,
-                            typeSpeed: 100,
+                            startDelay: 800,
+                            typeSpeed: 70,
                             loop: false,
                             showCursor: false,
                             onComplete: function() {
