@@ -4,6 +4,8 @@ $(document).ready(function () {
     var delta = 5;
     var headerHeight = $("header").outerHeight();
 
+    $(".moreInfoBox").hide();
+
     $(window).scroll(function (event) {
         didScroll = true;
         console.log("scroll down true");
@@ -41,7 +43,7 @@ $(document).ready(function () {
             showCursor: false,
             onComplete: function() {
                 var typed = new Typed("#aboutMe", {
-                    strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A MOVIE FANATIC."],
+                    strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A WRITER.", "I AM A MOVIE FANATIC."],
                     startDelay: 500,
                     smartBackspace: true,
                     typeSpeed: 100,
@@ -55,6 +57,10 @@ $(document).ready(function () {
                             typeSpeed: 100,
                             loop: false,
                             showCursor: false,
+                            onComplete: function() {
+                                $( ".typedBox").delay(1000).fadeOut("slow");
+                                $(".moreInfoBox").delay(2000).fadeIn(1000);
+                            }
                     });
                 }
                 });
