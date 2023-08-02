@@ -118,9 +118,17 @@ body {
 }
 
 .aboutMeBox {
-    width: 80%;
+    position: relative;
+    top: 100px;
+    left: 600px;
+    width: 40%;
     height: 560px;
-    background-color: aquamarine;
+}
+
+.typedText {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    text-shadow: 0 0 5px grey;
 }
 
 #personalImage {

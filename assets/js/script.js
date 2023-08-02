@@ -29,4 +29,36 @@ $(document).ready(function () {
         }
         lastScrollTop = st;
     }
-})
+
+    if ($("#hiMessage").length == 1) {
+             
+
+        var typed = new Typed("#hiMessage", {
+            strings: ["HI IM CHAZ."],
+            startDelay: 1200,
+            typeSpeed: 100,
+            loop: false,
+            showCursor: false,
+            onComplete: function() {
+                var typed = new Typed("#aboutMe", {
+                    strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A MOVIE FANATIC."],
+                    startDelay: 500,
+                    smartBackspace: true,
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    loop: false,
+                    showCursor: false,
+                    onComplete: function() {
+                        var typed = new Typed("#more", {
+                            strings: ["WANT TO KNOW MORE?"],
+                            startDelay: 500,
+                            typeSpeed: 100,
+                            loop: false,
+                            showCursor: false,
+                    });
+                }
+                });
+            }
+        });
+    }
+});
