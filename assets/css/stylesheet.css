@@ -28,6 +28,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+    box-shadow: 0 0 10px black;
     justify-content: center;
     width: 100%;
     height: fit-content;
@@ -279,10 +280,41 @@ cursor: pointer;
     margin: 10px;
 }
 
+#project1Box {
+    margin-left: 40px;
+}
+
+#project2Box {
+    justify-content: end;
+    margin-right: 40px;
+}
+
+#project3Box {
+    margin-left: 40px;
+}
+
+#project4Box {
+    justify-content: end;
+    margin-right: 40px;
+}
+
 #project1 {
     background-image: url("./Background\ 6.jpg");
     margin-left: 40px;
 }
+
+#project2 {
+    background-image: url("./Background\ 7.jpg");
+}
+
+#project3 {
+    background-image: url("./Background\ 8.jpg");
+}
+
+#project4 {
+    background-image: url("./Background\ 9.jpg");
+}
+
 
 #pageWrap {
     width: 100%;
