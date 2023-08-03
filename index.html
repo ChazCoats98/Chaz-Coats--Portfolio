@@ -36,29 +36,6 @@
             </div>
         </nav>
     </header>
-    <section class="page1">
-        <div class="page1Box">
-            <div class="aboutMeBox">
-                <div class="typedBox">
-                    <h2 class="typedText" id="hiMessage"></h2>
-                    <h2 class="typedText" id="aboutMe"></h2>
-                    <h2 class="typedText" id="more"></h2>
-                </div>
-                <div class="moreInfoBox">
-                    <img id="personalImage" src="./assets/images/me.jpg" alt="picture of Chaz Coats">
-                    <p class="moreInfoText">I'm relatively new to the programming world, however I'm taking to it quickly. 
-                        Currently I work as a Quality Engineer at an Aerospace company, but I'm looking to do something more creative and exciting.
-                        I love making things that people interact with positively and use to improve their day-to-day lives. 
-                        I got into Quality Engineering because the idea of improving processes to make better, more usable products excites me.
-                        Unfortunately the Aerospace industry is bogged down by regulations, making real changes difficult to implement. 
-                        I've always wanted to live in New York for access to more museums, restaurants, music, and movies (all within walking distance) and I'm looking for a company that allows me to do that. 
-                        I'm looking for somewhere I can learn and grow, where I can collaborate with coworkers on interesting and challenging projects, and where I can make programs that positively affect peoples lives.
-                        I'f this sounds like your company, please feel free to reach out to me for an interview. I look forward to hearing from you.</p>
-                </div>
-            </div>
-        </div>
-        <div class="nextPageAlign"></div>
-    </section>
     <div class="scrollBox">
         <h5 class="pageNumber" id="currPage">1</h5>
         <div class="scrollBar">
@@ -66,9 +43,47 @@
         </div>
         <h5 class="pageNumber" id="lastPage">5</h5>
     </div>
+    <div class="pageDescriptions">
+        <div class="pages">ABOUT</div>
+        <div class="pages">PROJECTS</div>
+        <div class="pages">RESUME</div>
+        <div class="pages">CONTACT</div>
+    </div>
+    <div id="pageWrap">
+        <div id="panelWrap">
+            <section>
+                <div class="page1Box">
+                    <div class="aboutMeBox">
+                        <div class="typedBox">
+                            <h2 class="typedText" id="hiMessage"></h2>
+                            <h2 class="typedText" id="aboutMe"></h2>
+                            <h2 class="typedText" id="more"></h2>
+                        </div>
+                        <div class="moreInfoBox">
+                            <img id="personalImage" src="./assets/images/me.jpg" alt="picture of Chaz Coats">
+                            <p class="moreInfoText">I'm relatively new to the programming world, however I'm taking to it quickly. 
+                                Currently I work as a Quality Engineer at an Aerospace company, but I'm looking to do something more creative and exciting.
+                                I love making things that people interact with positively and use to improve their day-to-day lives. 
+                                I got into Quality Engineering because the idea of improving processes to make better, more usable products excites me.
+                                Unfortunately the Aerospace industry is bogged down by regulations, making real changes difficult to implement. 
+                                I've always wanted to live in New York for access to more museums, restaurants, music, and movies (all within walking distance) and I'm looking for a company that allows me to do that. 
+                                I'm looking for somewhere I can learn and grow, where I can collaborate with coworkers on interesting and challenging projects, and where I can make programs that positively affect peoples lives.
+                                I'f this sounds like your company, please feel free to reach out to me for an interview. I look forward to hearing from you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextPageAlign"></div>
+            </section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </div>
+    </div>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

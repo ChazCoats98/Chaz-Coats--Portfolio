@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    gsap.registerPlugin(Draggable);
+    var slides = $("section");
+    var container = $("panelWrap");
+    var lastSlide = 0;
+    var currentSlide = 0;
+    var duration = 0.6;
+    var iHeight = window.innerHeight;
+    var offsets = [];
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -31,6 +39,18 @@ $(document).ready(function () {
         }
         lastScrollTop = st;
     }
+
+    function newSize() {
+        offsets = [];
+        ih = window.innerHeight;
+        gsap.set("#panelWrap", { height: slides.length * ih });
+        gsap.set(slides, { height: ih });
+        for (let i = 0; i < slides.length; i++) {
+          offsets.push(-slides[i].offsetTop);
+        }
+        gsap.set(container, { y: offsets[activeSlide] });
+        dragMe[0].vars.snap = offsets;
+      }
 
     if ($("#hiMessage").length == 1) {
              
@@ -67,4 +87,7 @@ $(document).ready(function () {
             }
         });
     }
+
+    $("#currPage").click(slideAnim);
+    $("#lastPage").click(slideAnim);
 });

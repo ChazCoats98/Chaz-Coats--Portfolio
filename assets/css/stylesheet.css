@@ -18,6 +18,16 @@ body {
     justify-content: flex-start;
 }
 
+section {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .headerBody {
     position: fixed;
     top: 0px;
@@ -112,13 +122,10 @@ body {
     transform: scaleX(1);
 }
 
-.page1 {
-height: 100vh;
-}
-
 .page1Box {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .aboutMeBox {
@@ -177,10 +184,12 @@ height: 100vh;
 }
 
 .nextPageAlign {
+    position: absolute;
     display: flex;
+    top: 92vh;
     width: 100%;
-    height: 40px;
-    background-color: black;
+    height: 70px;
+    border-bottom: 1px solid #666;
 }
 
 .scrollBox {
@@ -224,6 +233,18 @@ height: 100vh;
     font-family: 'Cinzel', serif;
     font-size: 16px;
     font-weight: 600;
+}
+
+#pageWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#panelWrap {
+    width: 100%;
+    height: 100%;
 }
 
 #personalImage {
