@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
         anchors:['about', 'projects','resume','contact'],
+        lockAnchors: true,
         scrollBar: false,
         licenseKey:'ZQLIJ-PWU76-ZW2HK-3K5QI-DKKYL',
         fitToSection: true,
@@ -14,14 +15,14 @@ $(document).ready(function () {
         keyboardScrolling: true,
         animateAnchor: true,
         lazyLoading: true,
-        beforeLeave: function() {
-            $(".headerTop").slideUp("slow", function(){
-                $(".headerTop").hide();
-            });
-            $(".headerText").slideUp("slow", function(){
-                $(".headerText").hide();
-            });
+        onSlideLeave: function(section) {
+            console.log(fullpage_api.getActiveSection());
+        },
+        beforeLeave: function(destination) {
+            console.log(destination);
+           
         }
+
         });
 
     $(".moreInfoBox").hide();
