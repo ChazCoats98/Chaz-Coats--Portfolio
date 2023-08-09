@@ -268,16 +268,24 @@ cursor: pointer;
 .p2Containers {
     display: flex;
     width: 100%;
-    height: 25%;
+    height: 200px;
 }
 
-.projectDisplay {
+.projectBg {
     display: flex;
     border-radius: 15px;
     box-shadow: 0 0 10px black;
     width: 60%;
     height: 90%;
     margin: 10px;
+}
+
+.projectDisplay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("./paperTexture.jpg");
+    opacity: .15;
 }
 
 #project1Box {
@@ -298,21 +306,21 @@ cursor: pointer;
     margin-right: 40px;
 }
 
-#project1 {
-    background-image: url("./Background\ 6.jpg");
+#project1Bg { 
+    background-color: #857036;
     margin-left: 40px;
 }
 
-#project2 {
-    background-image: url("./Background\ 7.jpg");
+#project2Bg {
+    background-color: #655242;
 }
 
-#project3 {
-    background-image: url("./Background\ 8.jpg");
+#project3Bg {
+    background-color: #45453e;
 }
 
-#project4 {
-    background-image: url("./Background\ 9.jpg");
+#project4Bg {
+    background-color: #7f432d;
 }
 
 

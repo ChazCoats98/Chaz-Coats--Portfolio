@@ -46,7 +46,7 @@ $(document).ready(function () {
             onComplete: function () {
                 var typed = new Typed("#aboutMe", {
                     strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A WRITER.", "I AM A MOVIE FANATIC."],
-                    startDelay: 100,
+                    startDelay: 800,
                     smartBackspace: true,
                     typeSpeed: 70,
                     backSpeed: 50,
