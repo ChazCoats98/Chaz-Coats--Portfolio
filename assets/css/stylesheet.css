@@ -395,6 +395,20 @@ a {
     box-shadow: 0 0 10px black;
 }
 
+.contactContent {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    letter-spacing: 1.6px;
+    width: 70%;
+}
+
+.contactLinks {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.6px;
+}
+
 #projectsTyped {
     display: flex;
     justify-content: center;

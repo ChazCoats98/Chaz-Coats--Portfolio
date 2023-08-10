@@ -32,7 +32,7 @@ $(document).ready(function () {
     $("#job4").hide();
     $("#job5").hide();
     $("#resume3").hide();
-    // $(".resumeBox").hide();
+    $(".resumeBox").hide();
     $(".headerTop").hide();
 
     $("#currPage").click(function () {
