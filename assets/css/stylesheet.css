@@ -265,16 +265,24 @@ cursor: pointer;
     transition: top 400ms ease-out;
 }
 
+.projectsBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px 40px 40px;
+}
+
 .p2Containers {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 25%;
 }
 
 .projectBg {
     display: flex;
     border-radius: 15px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px grey;
     width: 60%;
     height: 90%;
     margin: 10px;
@@ -285,25 +293,32 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url("./paperTexture.jpg");
+    border-radius: 15px;
     opacity: .15;
 }
 
+#projectsTyped {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 #project1Box {
-    margin-left: 40px;
+    display: flex;
 }
 
 #project2Box {
+    display: flex;
     justify-content: end;
-    margin-right: 40px;
 }
 
 #project3Box {
-    margin-left: 40px;
+    display: flex;
 }
 
 #project4Box {
+    display: flex;
     justify-content: end;
-    margin-right: 40px;
 }
 
 #project1Bg { 

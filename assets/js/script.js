@@ -69,5 +69,16 @@ $(document).ready(function () {
             }
         });
     }
+    
+    if ($("#resume1").length == 1) {
+        var typed = new Typed("#resume1", {
+            strings: ["I'VE WORKED IN A PLETHORA OF DIFFERENT INDUSTRIES WHICH HAVE TAUGHT ME A RANGE OF DIFFERENT SKILLS."],
+            startDelay: 1200,
+            typeSpeed: 70,
+            loop: false,
+            showCursor: false,
+            onComplete: function (){}
+        })
+    }
 
 });
