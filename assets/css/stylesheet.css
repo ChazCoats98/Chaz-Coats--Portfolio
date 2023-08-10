@@ -297,6 +297,12 @@ cursor: pointer;
     opacity: .15;
 }
 
+.jobsList {
+    list-style: none;
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+}
+
 #projectsTyped {
     display: flex;
     justify-content: center;

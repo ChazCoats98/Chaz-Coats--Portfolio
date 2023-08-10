@@ -20,12 +20,18 @@ $(document).ready(function () {
         },
         beforeLeave: function(destination) {
             console.log(destination);
-           
         }
 
         });
 
     $(".moreInfoBox").hide();
+    $("#job1").hide();
+    $("#job2").hide();
+    $("#job3").hide();
+    $("#job4").hide();
+    $("#job5").hide();
+    $("#resume3").hide();
+    $(".headerTop").hide();
 
     $("#currPage").click(function () {
         fullpage_api.moveSectionUp();
@@ -77,7 +83,25 @@ $(document).ready(function () {
             typeSpeed: 70,
             loop: false,
             showCursor: false,
-            onComplete: function (){}
+            onComplete: function (){
+                var typed = new Typed("#resume2", {
+                    strings: ["I'VE BEEN:"],
+                    startDelay: 800,
+                    smartBackspace: true,
+                    typeSpeed: 70,
+                    backSpeed: 50,
+                    loop: false,
+                    showCursor: false,
+                    onComplete: function () {
+                        $("#job1").delay(1000).fadeIn(1000);
+                        $("#job2").delay(2500).fadeIn(1000);
+                        $("#job3").delay(4000).fadeIn(1000);
+                        $("#job4").delay(5500).fadeIn(1000);
+                        $("#job5").delay(7000).fadeIn(1000);
+                        $("#resume3").delay(8500).fadeIn(1000);
+                    }
+                });
+            }
         })
     }
 
