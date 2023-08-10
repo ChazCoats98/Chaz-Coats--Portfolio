@@ -290,6 +290,7 @@ cursor: pointer;
 
 .projectDisplay {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     background-image: url("./paperTexture.jpg");
@@ -297,10 +298,33 @@ cursor: pointer;
     opacity: .15;
 }
 
+.jobInfoBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px 10px 10px 10px;
+}
+
 .jobsList {
     list-style: none;
     font-family: 'Cinzel', serif;
     font-size: 32px;
+}
+
+.resumeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resumeDisplay {
+    display: flex;
+    width: 60%;
+    height: 80%;
+    background-color: #45453e;
 }
 
 #projectsTyped {
@@ -348,7 +372,6 @@ cursor: pointer;
 #pageWrap {
     width: 100%;
     height: 100%;
-    position: absolute;
     overflow: hidden;
 }
 
@@ -365,6 +388,20 @@ cursor: pointer;
     border-radius: 15px;
     width: 30%;
     height: 100%;
+}
+
+#resume1 {
+    display: flex;
+}
+
+#resume2 {
+    display: flex;
+    margin: 0;
+}
+
+#resume3 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
 }
 
 @keyframes moreInfoBox {
