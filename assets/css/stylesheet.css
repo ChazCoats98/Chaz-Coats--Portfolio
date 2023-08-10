@@ -22,6 +22,11 @@ section {
     margin-top: 140px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .headerBody {
     position: fixed;
     top: 0px;
@@ -364,11 +369,30 @@ section {
     height: 60%;
     background-image: url("./Background\ 4.jpg");
     color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
 }
 
 .contactHeader {
     font-family: 'Cinzel', serif;
-    font-size: 56px;
+    font-size: 48px;
+}
+
+.buttonContainer {
+    display: flex;
+    
+}
+
+.contactBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }
 
 #projectsTyped {
@@ -486,24 +510,15 @@ section {
 }
 
 #emailBtn {
-    display: flex;
     background-color: #857036;
-    width: 40px;
-    height: 25px;
 }
 
 #githubBtn {
-    display: flex;
     background-color: #7f432d;
-    width: 40px;
-    height: 25px;
 }
 
 #linkedinBtn {
-    display: flex;
-    background-color: #655242;
-    width: 40px;
-    height: 25px;
+    background-color: #655242;  
 }
 
 @keyframes moreInfoBox {
