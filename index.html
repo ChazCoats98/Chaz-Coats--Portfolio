@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css"
         integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css"
+        integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.extensions.min.js"
+        integrity="sha512-i0+IGP2OBJG5Lioj9FaBr30x7Ci39dWQb8BhSd8J86p48OgctpfXXq0hG6cmCbCkKh4tn335pz9b3seChGFdKw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
     <title>Chaz Coats' Portfolio</title>
 </head>
 
@@ -59,155 +68,157 @@
         <div class="pages">RESUME</div>
         <div class="pages">CONTACT</div>
     </div>
-    <div id="pageWrap">
-        <div id="panelWrap">
-            <section class="section" id="page1">
-                <div class="pageBox">
-                    <div class="aboutMeBox">
-                        <div class="typedBox">
-                            <h2 class="typedText" id="hiMessage"></h2>
-                            <h2 class="typedText" id="aboutMe"></h2>
-                            <h2 class="typedText" id="more"></h2>
-                        </div>
-                        <div class="moreInfoBox">
-                            <img id="personalImage" src="./assets/images/me.jpg" alt="picture of Chaz Coats">
-                            <p class="moreInfoText">I'm relatively new to the programming world, however I'm taking to it
-                                quickly.
-                                Currently I work as a Quality Engineer at an Aerospace company, but I'm looking to do
-                                something more creative and exciting.
-                                I love making things that people interact with positively and use to improve their
-                                day-to-day lives.
-                                I got into Quality Engineering because the idea of improving processes to make better, more
-                                usable products excites me.
-                                Unfortunately the Aerospace industry is bogged down by regulations, making real changes
-                                difficult to implement.
-                                I've always wanted to live in New York for access to more museums, restaurants, music, and
-                                movies (all within walking distance) and I'm looking for a company that allows me to do
-                                that.
-                                I'm looking for somewhere I can learn and grow, where I can collaborate with coworkers on
-                                interesting and challenging projects, and where I can make programs that positively affect
-                                peoples lives.
-                                I'f this sounds like your company, please feel free to reach out to me for an interview. I
-                                look forward to hearing from you.</p>
+    <div id="panelWrap">
+        <section class="section" id="page1">
+            <div class="pageBox">
+                <div class="aboutMeBox">
+                    <div class="typedBox">
+                        <h2 class="typedText" id="hiMessage"></h2>
+                        <h2 class="typedText" id="aboutMe"></h2>
+                        <h2 class="typedText" id="more"></h2>
+                    </div>
+                    <div class="moreInfoBox">
+                        <img id="personalImage" src="./assets/images/me.jpg" alt="picture of Chaz Coats">
+                        <p class="moreInfoText">I'm relatively new to the programming world, however I'm taking to it
+                            quickly.
+                            Currently I work as a Quality Engineer at an Aerospace company, but I'm looking to do
+                            something more creative and exciting.
+                            I love making things that people interact with positively and use to improve their
+                            day-to-day lives.
+                            I got into Quality Engineering because the idea of improving processes to make better, more
+                            usable products excites me.
+                            Unfortunately the Aerospace industry is bogged down by regulations, making real changes
+                            difficult to implement.
+                            I've always wanted to live in New York for access to more museums, restaurants, music, and
+                            movies (all within walking distance) and I'm looking for a company that allows me to do
+                            that.
+                            I'm looking for somewhere I can learn and grow, where I can collaborate with coworkers on
+                            interesting and challenging projects, and where I can make programs that positively affect
+                            peoples lives.
+                            I'f this sounds like your company, please feel free to reach out to me for an interview. I
+                            look forward to hearing from you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="projectsBox">
+                <h2 class="typedText" id="projectsTyped"> HERE ARE SOME PROJECTS IVE WORKED ON</h2>
+                <div class="p2Containers" id="project1Box">
+                    <div class="projectBg" id="project1Bg">
+                        <div class="projectDisplay" id="project1Display"></div>
+                    </div>
+                </div>
+                <div class="p2Containers" id="project2Box">
+                    <div class="projectBg" id="project2Bg">
+                        <div class="projectDisplay" id="project2Display"></div>
+                    </div>
+                </div>
+                <div class="p2Containers" id="project3Box">
+                    <div class="projectBg" id="project3Bg">
+                        <div class="projectDisplay" id="project3Display"></div>
+                    </div>
+                </div>
+                <div class="p2Containers" id="project4Box">
+                    <div class="projectBg" id="project4Bg">
+                        <div class="projectDisplay" id="project4Display"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="jobInfoBox">
+                <h2 class="typedText" id="resume1"></h2>
+                <h2 class="typedText" id="resume2"></h2>
+                <ul class="jobsList">
+                    <li id="job1">A SALESPERSON</li>
+                    <li id="job2">A MECHANIC</li>
+                    <li id="job3">A MANAGER FOR MULTIPLE DIFFERENT COMPANIES</li>
+                    <li id="job4">AN AEROSPACE QUALITY ENGINEER</li>
+                    <li id="job5">AND AN AEROSPACE AUDITOR</li>
+                </ul>
+                <h3 id="resume3">THROUGH WORKING THESE JOBS IVE INTERACTED WITH A LOT OF DIFFERENT SOFTWARE.
+                    I'VE LEARNED WHAT WORKS AND WHAT DOESN'T,
+                    HOW IMPORTANT USABILITY AND INTUITIVE UI DESIGN IS,
+                    AND WHAT I LIKE AND DON'T LIKE FUNCTIONALITY WISE. </h3>
+            </div>
+            <div class="resumeBox">
+                <div class="resumeDisplay">
+                    <div class="resumeBg">
+                        <h2 class="resumeText" id="resumeHeader">RESUME</h2>
+                        <div class="resumeDisplayInner">
+                            <h3 class="resumeText" id="workExperienceHeader">Relevant Work Experience</h3>
+                            <h4 class="resumeText">Quality Engineer/Auditor</h4>
+                            <h5 class="resumeText">Budney Industries</h5>
+                            <h5 class="resumeText">July 2022 - Present</h5>
+                            <ul class="resumeText">
+                                <li>Implemented creative solutions to fix/improve production processes in order to make
+                                    better products.</li>
+                                <li>Tracked, documented, and analyzed important process data in order to identify and
+                                    correct production process breakdowns.</li>
+                                <li>Worked with shop floor and 3rd party suppliers to correct manufacturing processes
+                                    when a non-conforming product was produced.</li>
+                                <li>Audited the shop floor and 3rd party suppliers to ensure that AS9100D standards were
+                                    being upheld.</li>
+                                <li>Managed and trained new Quality Engineers to track key product characteristics,
+                                    maintain continuous improvement audits, and identify potential process improvements.
+                                </li>
+                            </ul>
+                            <h4 class="resumeText">Sales and Service Manager</h4>
+                            <h5 class="resumeText">Firestone Complete Auto Care</h5>
+                            <h5 class="resumeText">January 2020 - July 2022</h5>
+                            <ul class="resumeText">
+                                <li>Oversaw repair jobs on customer vehicles to ensure they were getting completed
+                                    properly and on time.</li>
+                                <li>Managed and trained new technicians and sales associates.</li>
+                                <li>Handled financial books and used software to track and report earnings trends.</li>
+                                <li>Assisted technicians with vehicle repairs when needed.</li>
+                            </ul>
+                            <h3 class="resumeText" id="educationHeader">Education</h3>
+                            <ul class="resumeText">
+                                <li>
+                                    <h5 class="educationSections" id="edu1">Full Stack Web Developer Bootcamp</h5>
+                                    <h5 class="educationSections">UConn School of Engineering</h5>
+                                    <h5 class="educationSections">May 2023 - Present</h5>
+                                </li>
+                                <li>
+                                    <h5 class="educationSections" id="edu2">AS9100D Internal Auditor Training</h5>
+                                    <h5 class="educationSections">Central Connecticut State University</h5>
+                                    <h5 class="educationSections">March 2023</h5>
+                                </li>
+                                <li>
+                                    <h5 class="educationSections" id="edu3">Mechanical Engineering</h5>
+                                    <h5 class="educationSections">Wichita State University</h5>
+                                    <h5 class="educationSections">August 2017 - May 2019</h5>
+                                    <h5 class="educationSections">Though I went to school for Mechanical Engineering, I
+                                        never graduated. I knew I wanted to be an Engineer but I realized Mechanical
+                                        Engineering wasn't my field. </h5>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section">
-                <div class="projectsBox">
-                    <h2 class="typedText" id="projectsTyped"> HERE ARE SOME PROJECTS IVE WORKED ON</h2>
-                    <div class="p2Containers" id="project1Box">
-                        <div class="projectBg" id="project1Bg">
-                            <div class="projectDisplay" id="project1Display"></div>
-                        </div>
-                    </div>
-                    <div class="p2Containers" id="project2Box">
-                        <div class="projectBg" id="project2Bg">
-                            <div class="projectDisplay" id="project2Display"></div>
-                        </div>
-                    </div>
-                    <div class="p2Containers" id="project3Box">
-                        <div class="projectBg" id="project3Bg">
-                            <div class="projectDisplay" id="project3Display"></div>
-                        </div>
-                    </div>
-                    <div class="p2Containers" id="project4Box">
-                        <div class="projectBg" id="project4Bg">
-                            <div class="projectDisplay" id="project4Display"></div>
-                        </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="contactBox">
+                <div class="contactDisplay">
+                    <h2 class="contactHeader">CONTACT</h2>
+                    <p class="contactContent">If you like what you see feel free to reach out to schedule an interview.
+                        I'm looking forward to hearing from you!</p>
+                    <h3 class="contactLinks">The best ways to contact me: </h3>
+                    <div class="buttonContainer">
+                        <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns"
+                                id="emailBtn">EMAIL</span></a>
+                        <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns"
+                                id="githubBtn">GITHUB</span></a>
+                        <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns"
+                                id="linkedinBtn">LINKEDIN</span></a>
                     </div>
                 </div>
-            </section>
-            <section class="section">
-                <div class="jobInfoBox">
-                    <h2 class="typedText" id="resume1"></h2>
-                    <h2 class="typedText" id="resume2"></h2>
-                    <ul class="jobsList">
-                        <li id="job1">A SALESPERSON</li>
-                        <li id="job2">A MECHANIC</li>
-                        <li id="job3">A MANAGER FOR MULTIPLE DIFFERENT COMPANIES</li>
-                        <li id="job4">AN AEROSPACE QUALITY ENGINEER</li>
-                        <li id="job5">AND AN AEROSPACE AUDITOR</li>
-                    </ul>
-                    <h3 id="resume3">THROUGH WORKING THESE JOBS IVE INTERACTED WITH A LOT OF DIFFERENT SOFTWARE.
-                        I'VE LEARNED WHAT WORKS AND WHAT DOESN'T,
-                        HOW IMPORTANT USABILITY AND INTUITIVE UI DESIGN IS, 
-                        AND WHAT I LIKE AND DON'T LIKE FUNCTIONALITY WISE. </h3>
-                </div>
-                <div class="resumeBox">
-                    <div class="resumeDisplay">
-                        <div class="resumeBg">
-                            <h2 class="resumeText" id="resumeHeader">RESUME</h2>
-                            <div class="resumeDisplayInner">
-                                <h3 class="resumeText" id="workExperienceHeader">Relevant Work Experience</h3>
-                                <h4 class="resumeText">Quality Engineer/Auditor</h4>
-                                <h5 class="resumeText">Budney Industries</h5>
-                                <h5 class="resumeText">July 2022 - Present</h5>
-                                <ul class="resumeText">
-                                    <li>Implemented creative solutions to fix/improve production processes in order to make better products.</li>
-                                    <li>Tracked, documented, and analyzed important process data in order to identify and correct production process breakdowns.</li>
-                                    <li>Worked with shop floor and 3rd party suppliers to correct manufacturing processes when a non-conforming product was produced.</li>
-                                    <li>Audited the shop floor and 3rd party suppliers to ensure that AS9100D standards were being upheld.</li>
-                                    <li>Managed and trained new Quality Engineers to track key product characteristics, maintain continuous improvement audits, and identify potential process improvements.</li>
-                                </ul>
-                                <h4 class="resumeText">Sales and Service Manager</h4>
-                                <h5 class="resumeText">Firestone Complete Auto Care</h5>
-                                <h5 class="resumeText">January 2020 - July 2022</h5>
-                                <ul class="resumeText">
-                                    <li>Oversaw repair jobs on customer vehicles to ensure they were getting completed properly and on time.</li>
-                                    <li>Managed and trained new technicians and sales associates.</li>
-                                    <li>Handled financial books and used software to track and report earnings trends.</li>
-                                    <li>Assisted technicians with vehicle repairs when needed.</li>
-                                </ul>
-                                <h3 class="resumeText" id="educationHeader">Education</h3>
-                                <ul class="resumeText">
-                                    <li>
-                                        <h5 class="educationSections" id="edu1">Full Stack Web Developer Bootcamp</h5>
-                                        <h5 class="educationSections">UConn School of Engineering</h5>
-                                        <h5 class="educationSections">May 2023 - Present</h5></li>
-                                    <li>
-                                        <h5 class="educationSections" id="edu2">AS9100D Internal Auditor Training</h5>
-                                        <h5 class="educationSections">Central Connecticut State University</h5>
-                                        <h5 class="educationSections">March 2023</h5>
-                                    </li>
-                                    <li>
-                                        <h5 class="educationSections" id="edu3">Mechanical Engineering</h5>
-                                        <h5 class="educationSections">Wichita State University</h5>
-                                        <h5 class="educationSections">August 2017 - May 2019</h5>
-                                        <h5 class="educationSections">Though I went to school for Mechanical Engineering, I never graduated. I knew I wanted to be an Engineer but I realized Mechanical Engineering wasn't my field. </h5>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="contactBox">
-                    <div class="contactDisplay">
-                        <h2 class="contactHeader">CONTACT</h2>
-                        <p class="contactContent">If you like what you see feel free to reach out to schedule an interview. 
-                            I'm looking forward to hearing from you!</p>
-                        <h3 class="contactLinks">The best ways to contact me: </h3>
-                        <div class="buttonContainer">
-                            <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns" id="emailBtn">EMAIL</span></a>
-                            <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns" id="githubBtn">GITHUB</span></a>
-                            <a href="mailto: chazcoats2@hotmail.com"><span class="contactBtns" id="linkedinBtn">LINKEDIN</span></a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.extensions.min.js"
-        integrity="sha512-i0+IGP2OBJG5Lioj9FaBr30x7Ci39dWQb8BhSd8J86p48OgctpfXXq0hG6cmCbCkKh4tn335pz9b3seChGFdKw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/script.js"></script>    
 </body>
 
 </html>
