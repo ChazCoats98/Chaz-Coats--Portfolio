@@ -348,6 +348,29 @@ section {
     padding: 0;
 }
 
+.contactBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contactDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    background-image: url("./Background\ 4.jpg");
+    color: white;
+}
+
+.contactHeader {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+}
+
 #projectsTyped {
     display: flex;
     justify-content: center;
@@ -460,6 +483,27 @@ section {
     display: flex;
     justify-content: center;
     font-size: 26px;
+}
+
+#emailBtn {
+    display: flex;
+    background-color: #857036;
+    width: 40px;
+    height: 25px;
+}
+
+#githubBtn {
+    display: flex;
+    background-color: #7f432d;
+    width: 40px;
+    height: 25px;
+}
+
+#linkedinBtn {
+    display: flex;
+    background-color: #655242;
+    width: 40px;
+    height: 25px;
 }
 
 @keyframes moreInfoBox {
