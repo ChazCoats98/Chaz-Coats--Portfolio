@@ -15,11 +15,20 @@ $(document).ready(function () {
         keyboardScrolling: true,
         animateAnchor: true,
         lazyLoading: true,
-        onSlideLeave: function(section) {
-            console.log(fullpage_api.getActiveSection());
+        onLeave: function(destination, direction) {
+            console.log(destination);
+            if (destination.index == 0 && direction == 'down') {
+                $(".headerTop").slideUp("slow", function(){
+                    $(".headerTop").hide();
+                });
+                $(".headerText").slideUp("slow", function(){
+                    $(".headerText").hide();
+                });
+            } else {
+                
+            }
         },
         beforeLeave: function(destination) {
-            console.log(destination);
         }
 
         });
@@ -33,7 +42,6 @@ $(document).ready(function () {
     $("#job5").hide();
     $("#resume3").hide();
     $(".resumeBox").hide();
-    $(".headerTop").hide();
 
     $("#currPage").click(function () {
         fullpage_api.moveSectionUp();
