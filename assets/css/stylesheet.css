@@ -258,7 +258,7 @@ section {
 }
 
 .pageNumber:hover {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .panelMove {
@@ -314,17 +314,66 @@ cursor: pointer;
 
 .resumeBox {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    padding-top: 80px;
+    height: fit-content;
 }
 
 .resumeDisplay {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
-    height: 80%;
-    background-color: #45453e;
+    height: fit-content;
+    background-color: #1b1b14;
+    box-shadow: 0 0 10px grey
+}
+
+.resumeBg {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resumeBg::before {
+    content: "";
+    background-image: url('./paperTexture.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15
+}
+
+.resumeDisplayInner {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.resumeText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1.6px;
+}
+
+#resumeHeader {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    color: white;
+    border-bottom: 1px solid rgb(97, 86, 86);
+    width: 100%;
+    font-size: 48px;
+    margin: 2px;
 }
 
 #projectsTyped {
@@ -351,7 +400,7 @@ cursor: pointer;
     justify-content: end;
 }
 
-#project1Bg { 
+#project1Bg {
     background-color: #857036;
     margin-left: 40px;
 }
@@ -402,6 +451,10 @@ cursor: pointer;
 #resume3 {
     font-family: 'Cinzel', serif;
     font-size: 42px;
+}
+
+#resumeHeader {
+    display: flex;
 }
 
 @keyframes moreInfoBox {
