@@ -365,15 +365,8 @@ section {
     letter-spacing: 1.6px;
 }
 
-#resumeHeader {
-    display: flex;
-    justify-content: center;
-    font-family: 'Cinzel', serif;
-    color: white;
-    border-bottom: 1px solid rgb(97, 86, 86);
-    width: 100%;
-    font-size: 48px;
-    margin: 2px;
+.educationSections {
+    padding: 0;
 }
 
 #projectsTyped {
@@ -455,6 +448,38 @@ section {
 
 #resumeHeader {
     display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    color: white;
+    border-bottom: 2px ridge rgb(121, 107, 107);
+    width: 100%;
+    font-size: 48px;
+    margin: 2px;
+}
+
+#workExperienceHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+
+}
+
+#edu1 {
+    font-size: 16px;
+}
+
+#edu2 {
+    font-size: 16px;
+}
+
+#edu3 {
+    font-size: 16px;
+}
+
+#educationHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
 }
 
 @keyframes moreInfoBox {
