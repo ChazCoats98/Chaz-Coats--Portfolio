@@ -275,12 +275,13 @@ a {
     transition: top 400ms ease-out;
 }
 
-.projectsBox {
+.projectsDisplay {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    width: 85%;
     height: 100%;
-    padding: 60px 40px 40px 40px;
 }
 
 .p2Containers {
@@ -298,6 +299,14 @@ a {
     margin: 10px;
 }
 
+.projectsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .projectDisplay {
     display: flex;
     flex-direction: row;
@@ -310,8 +319,16 @@ a {
 
 .jobInfoBox {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobInfoDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
     height: 100%;
     padding: 40px 10px 10px 10px;
 }
