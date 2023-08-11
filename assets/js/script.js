@@ -11,6 +11,7 @@ $(document).ready(function () {
     $("#resumeIndex").hide();
     $("#contactIndex").hide();
     $("#projectsTyped").hide();
+    $(".restartAbout").hide();
 
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
@@ -26,11 +27,9 @@ $(document).ready(function () {
         onLeave: function (origin, destination, direction) {
             console.log(destination.anchor);
             if (origin.index == 0 && direction == "down") {
-                //console.log(origin.anchor);
                 $(".headerTop").slideUp("slow");
                 $(".headerText").slideUp("slow");
             } else if (origin.index == 1 && direction == "up") {
-                //console.log(origin.anchor);
                 $(".headerTop").slideDown("slow");
                 $(".headerText").slideDown("slow");
             }
@@ -72,6 +71,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "-1200px"
                 }, 800);
+                $("#projectsTyped").fadeOut();
             } else if (destination.anchor == "contact" && direction == "down") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").hide();
@@ -102,6 +102,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "0px"
                 }, 800);
+                $("#projectsTyped").delay(1000).fadeIn(1000);
             } else if (destination.anchor == "about" && direction == "up") {
                 $("#aboutIndex").fadeIn(300);
                 $("#projectsIndex").fadeOut(300);
@@ -120,6 +121,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "-1200px"
                 }, 800);
+                $("#projectsTyped").fadeOut();
             }
         },
         afterLoad: function (origin, destination) {
@@ -152,7 +154,7 @@ $(document).ready(function () {
                             }
                         });
                     }
-                })
+                });
             }
         }
     });
@@ -186,6 +188,9 @@ $(document).ready(function () {
             loop: false,
             showCursor: false,
             onComplete: function () {
+                $(".restartAbout").on("click", function () {
+                    typed.reset();
+                });
                 var typed = new Typed("#aboutMe", {
                     strings: ["I AM A PROGRAMMER.", "I AM AN ENGINEER.", "I AM AN ARTIST.", "I AM A MUSIC LOVER.", "I AM A WRITER.", "I AM A MOVIE FANATIC."],
                     startDelay: 800,
@@ -204,11 +209,23 @@ $(document).ready(function () {
                             onComplete: function () {
                                 $(".typedBox").delay(1000).fadeOut("slow");
                                 $(".moreInfoBox").delay(2000).fadeIn("slow");
+                                $(".restartAbout").delay(3000).fadeIn("slow");
+                                $(".restartAbout").on("click", function(){
+                                typed.reset();
+                                });
                             }
                         });
                     }
                 });
             }
+        });
+
+        $(".restartAbout").on("click", function(){
+            $(".moreInfoBox").hide();
+            $(".restartAbout").hide();
+            $(".typedBox").show();
+            typed.reset();
+            typed.start();
         });
     }
 });
