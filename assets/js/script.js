@@ -34,8 +34,34 @@ $(document).ready(function () {
                 $(".headerText").slideDown("slow");
             }
 
-            if (destination.anchor == "projects") {
+            if (destination.anchor == "projects" && direction == "down") {
+                $("#aboutIndex").fadeOut();
+                $("#projectsIndex").fadeIn();
+                $("#resumeIndex").hide();
+                $("#contactIndex").hide();
+            } else if (destination.anchor == "resume" && direction == "down") {
+                $("#aboutIndex").hide();
+                $("#projectsIndex").fadeOut();
+                $("#resumeIndex").fadeIn();
+                $("#contactIndex").hide();
+            } else if (destination.anchor == "contact" && direction == "down") {
+                $("#aboutIndex").hide();
                 $("#projectsIndex").hide();
+                $("#resumeIndex").fadeOut();
+                $("#contactIndex").fadeIn();
+            } else if (destination.anchor == "resume" && direction == "up") {
+                $("#aboutIndex").hide();
+                $("#projectsIndex").hide();
+                $("#resumeIndex").fadeIn();
+                $("#contactIndex").fadeOut();
+            } else if (destination.anchor == "projects" && direction == "up") {
+                $("#aboutIndex").hide();
+                $("#projectsIndex").fadeIn();
+                $("#resumeIndex").fadeOut();
+                $("#contactIndex").hide();
+            } else if (destination.anchor == "about" && direction == "up") {
+                $("#aboutIndex").fadeIn();
+                $("#projectsIndex").fadeOut();
                 $("#resumeIndex").hide();
                 $("#contactIndex").hide();
             }
