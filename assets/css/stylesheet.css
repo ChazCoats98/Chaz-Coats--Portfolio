@@ -241,11 +241,24 @@ a {
 .scrollBarShading {
     position: absolute;
     width: 100%;
+    height: 25%;
     background: #666;
     top: 0;
     -webkit-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
+}
+
+.scroll50 {
+    height: 50%;
+}
+
+.scroll75 {
+    height: 75%;
+}
+
+.scroll100 {
+    height: 100%;
 }
 
 .pageNumber {

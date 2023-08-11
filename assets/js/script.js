@@ -35,35 +35,41 @@ $(document).ready(function () {
             }
 
             if (destination.anchor == "projects" && direction == "down") {
-                $("#aboutIndex").fadeOut();
-                $("#projectsIndex").fadeIn();
+                $("#aboutIndex").fadeOut(300);
+                $("#projectsIndex").fadeIn(300);
                 $("#resumeIndex").hide();
                 $("#contactIndex").hide();
+                $(".scrollBarShading").addClass("scroll50");
             } else if (destination.anchor == "resume" && direction == "down") {
                 $("#aboutIndex").hide();
-                $("#projectsIndex").fadeOut();
-                $("#resumeIndex").fadeIn();
+                $("#projectsIndex").fadeOut(300);
+                $("#resumeIndex").fadeIn(300);
                 $("#contactIndex").hide();
+                $(".scrollBarShading").removeClass("scroll50").addClass("scroll75");
             } else if (destination.anchor == "contact" && direction == "down") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").hide();
-                $("#resumeIndex").fadeOut();
-                $("#contactIndex").fadeIn();
+                $("#resumeIndex").fadeOut(300);
+                $("#contactIndex").fadeIn(300);
+                $(".scrollBarShading").removeClass("scroll75").addClass("scroll100");
             } else if (destination.anchor == "resume" && direction == "up") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").hide();
-                $("#resumeIndex").fadeIn();
-                $("#contactIndex").fadeOut();
+                $("#resumeIndex").fadeIn(300);
+                $("#contactIndex").fadeOut(300);
+                $(".scrollBarShading").removeClass("scroll100").addClass("scroll75");
             } else if (destination.anchor == "projects" && direction == "up") {
                 $("#aboutIndex").hide();
-                $("#projectsIndex").fadeIn();
-                $("#resumeIndex").fadeOut();
+                $("#projectsIndex").fadeIn(300);
+                $("#resumeIndex").fadeOut(300);
                 $("#contactIndex").hide();
+                $(".scrollBarShading").removeClass("scroll75").addClass("scroll50");
             } else if (destination.anchor == "about" && direction == "up") {
-                $("#aboutIndex").fadeIn();
-                $("#projectsIndex").fadeOut();
+                $("#aboutIndex").fadeIn(300);
+                $("#projectsIndex").fadeOut(300);
                 $("#resumeIndex").hide();
                 $("#contactIndex").hide();
+                $(".scrollBarShading").removeClass("scroll50");
             }
         },
         afterLoad: function (origin, destination) {
