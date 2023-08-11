@@ -114,6 +114,19 @@ $(document).ready(function () {
         fullpage_api.moveSectionDown();
     })
 
+    $("#aboutNav").click(function () {
+        fullpage_api.moveTo("about");
+    });
+    $("#projectsNav").click(function () {
+        fullpage_api.moveTo("projects");
+    });
+    $("#resumeNav").click(function () {
+        fullpage_api.moveTo("resume");
+    });
+    $("#contactNav").click(function () {
+        fullpage_api.moveTo("contact");
+    });
+
     if ($("#hiMessage").length == 1) {
 
         var typed = new Typed("#hiMessage", {
