@@ -195,7 +195,7 @@ a {
     width: 60%;
 }
 
-.restartAboutBox {
+.buttonBox {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -206,18 +206,19 @@ a {
     height: 10%
 }
 
-.restartAbout {
+.displayButton {
     display: flex;
     font-family: 'Cinzel', serif;
     letter-spacing: 1.6px;
     font-size: 14px;
     font-weight: 800;
     margin: 0%;
+    margin-top: 80px;
     padding: 0%;
     opacity: .6;
 }
 
-.restartAbout:hover {
+.displayButton:hover {
     cursor: pointer;
 }
 
@@ -377,7 +378,7 @@ a {
     flex-direction: column;
     width: 85%;
     height: 100%;
-    padding: 40px 10px 10px 10px;
+    padding: 60px 10px 10px 10px;
 }
 
 .jobsList {
@@ -549,11 +550,13 @@ a {
 
 #resume1 {
     display: flex;
+    font-size: 24px;
 }
 
 #resume2 {
     display: flex;
     margin: 0;
+    font-size: 24px;
 }
 
 #resume3 {

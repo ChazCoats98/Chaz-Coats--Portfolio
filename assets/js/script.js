@@ -10,8 +10,16 @@ $(document).ready(function () {
     $("#projectsIndex").hide();
     $("#resumeIndex").hide();
     $("#contactIndex").hide();
-    $("#projectsTyped").hide();
-    $(".restartAbout").hide();
+    $("#projectsHeader").hide();
+    $("#seeResume").hide();
+    $("#seeLanguages").hide();
+    $("#resume1").hide();
+    $("#resume2").hide();
+    $("#lang1").hide();
+    $("#lang2").hide();
+    $("#lang3").hide();
+    $("#lang4").hide();
+    $("#lang5").hide();
 
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
@@ -52,7 +60,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "0px"
                 }, 800);
-                $("#projectsTyped").delay(1000).fadeIn(1000);
+                $("#projectsHeader").delay(1000).fadeIn(1000);
             } else if (destination.anchor == "resume" && direction == "down") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").fadeOut(300);
@@ -71,7 +79,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "-1200px"
                 }, 800);
-                $("#projectsTyped").fadeOut();
+                $("#projectsHeader").fadeOut();
             } else if (destination.anchor == "contact" && direction == "down") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").hide();
@@ -102,7 +110,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "0px"
                 }, 800);
-                $("#projectsTyped").delay(1000).fadeIn(1000);
+                $("#projectsHeader").delay(1000).fadeIn(1000);
             } else if (destination.anchor == "about" && direction == "up") {
                 $("#aboutIndex").fadeIn(300);
                 $("#projectsIndex").fadeOut(300);
@@ -121,40 +129,20 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "-1200px"
                 }, 800);
-                $("#projectsTyped").fadeOut();
+                $("#projectsHeader").fadeOut();
             }
         },
         afterLoad: function (origin, destination) {
             if (destination.anchor == "resume") {
                 console.log(destination.anchor);
-                var typed = new Typed("#resume1", {
-                    strings: ["I'VE WORKED IN A PLETHORA OF DIFFERENT INDUSTRIES WHICH HAVE TAUGHT ME A RANGE OF DIFFERENT SKILLS."],
-                    startDelay: 1200,
-                    typeSpeed: 70,
-                    loop: false,
-                    showCursor: false,
-                    onComplete: function () {
-                        var typed = new Typed("#resume2", {
-                            strings: ["I'VE BEEN:"],
-                            startDelay: 800,
-                            smartBackspace: true,
-                            typeSpeed: 70,
-                            backSpeed: 50,
-                            loop: false,
-                            showCursor: false,
-                            onComplete: function () {
-                                $("#job1").delay(1000).fadeIn(1000);
-                                $("#job2").delay(2500).fadeIn(1000);
-                                $("#job3").delay(4000).fadeIn(1000);
-                                $("#job4").delay(5500).fadeIn(1000);
-                                $("#job5").delay(7000).fadeIn(1000);
-                                $("#resume3").delay(8500).fadeIn(1000);
-                                $(".jobInfoBox").delay(14000).fadeOut("slow");
-                                $(".resumeBox").delay(15000).fadeIn("slow");
-                            }
-                        });
-                    }
-                });
+                $("#resume1").delay(1000).fadeIn(1000);
+                $("#resume2").delay(5000).fadeIn(1000);
+                $("#lang1").delay(7000).fadeIn(1000);
+                $("#lang2").delay(9000).fadeIn(1000);
+                $("#lang3").delay(11000).fadeIn(1000);
+                $("#lang4").delay(13000).fadeIn(1000);
+                $("#lang5").delay(15000).fadeIn(1000);
+                $("#seeResume").delay(17000).fadeIn(1000);
             }
         }
     });
@@ -219,13 +207,25 @@ $(document).ready(function () {
                 });
             }
         });
-
-        $(".restartAbout").on("click", function(){
-            $(".moreInfoBox").hide();
-            $(".restartAbout").hide();
-            $(".typedBox").show();
-            typed.reset();
-            typed.start();
-        });
     }
+
+    $(".restartAbout").on("click", function(){
+        $(".moreInfoBox").hide();
+        $(".restartAbout").hide();
+        $(".typedBox").show();
+        typed.reset();
+        typed.start();
+    });
+
+    $("#seeResume").on("click", function(){
+        $(".jobInfoBox").fadeOut("slow");
+        $(".resumeBox").delay(1000).fadeIn("slow");
+        $("#seeLanguages").delay(3000).fadeIn("slow");
+    });
+
+    $("#seeLanguages").on("click", function(){
+        $(".resumeBox").fadeOut("slow");
+        $(".jobInfoBox").delay(1000).fadeIn("slow");
+        $("#seeResume").delay(3000).fadeIn("slow");
+    });
 });
