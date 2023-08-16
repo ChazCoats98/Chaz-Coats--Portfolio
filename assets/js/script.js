@@ -60,7 +60,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "0px"
                 }, 800);
-                $("#projectsHeader").delay(1000).fadeIn(1000);
+                $("#projectsHeader").delay(500).fadeIn(1000);
             } else if (destination.anchor == "resume" && direction == "down") {
                 $("#aboutIndex").hide();
                 $("#projectsIndex").fadeOut(300);
@@ -110,7 +110,7 @@ $(document).ready(function () {
                 $("#project4Bg").animate({
                     "right": "0px"
                 }, 800);
-                $("#projectsHeader").delay(1000).fadeIn(1000);
+                $("#projectsHeader").delay(500).fadeIn(1000);
             } else if (destination.anchor == "about" && direction == "up") {
                 $("#aboutIndex").fadeIn(300);
                 $("#projectsIndex").fadeOut(300);
@@ -135,7 +135,7 @@ $(document).ready(function () {
         afterLoad: function (origin, destination) {
             if (destination.anchor == "resume") {
                 console.log(destination.anchor);
-                $("#resume1").delay(1000).fadeIn(1000);
+                $("#resume1").delay(500).fadeIn(1000);
                 $("#resume2").delay(5000).fadeIn(1000);
                 $("#lang1").delay(7000).fadeIn(1000);
                 $("#lang2").delay(9000).fadeIn(1000);
@@ -218,14 +218,14 @@ $(document).ready(function () {
     });
 
     $("#seeResume").on("click", function(){
-        $(".jobInfoBox").fadeOut("slow");
+        $(".languageInfoBox").fadeOut("slow");
         $(".resumeBox").delay(1000).fadeIn("slow");
         $("#seeLanguages").delay(3000).fadeIn("slow");
     });
 
     $("#seeLanguages").on("click", function(){
         $(".resumeBox").fadeOut("slow");
-        $(".jobInfoBox").delay(1000).fadeIn("slow");
+        $(".languageInfoBox").delay(1000).fadeIn("slow");
         $("#seeResume").delay(3000).fadeIn("slow");
     });
 });
