@@ -228,4 +228,8 @@ $(document).ready(function () {
         $(".languageInfoBox").delay(1000).fadeIn("slow");
         $("#seeResume").delay(3000).fadeIn("slow");
     });
+
+    $("#project1Display").on("hover", function(){
+        
+    });
 });
