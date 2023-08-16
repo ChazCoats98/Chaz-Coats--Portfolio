@@ -371,8 +371,23 @@ a {
     height: 100%;
 }
 
-.projectTextInner {
+.hoverButton {
     font-family: 'Cinzel', serif;
+    text-shadow: 0 0 8px black;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: white;
+    opacity: .8;
+}
+
+.projectTextInner {
+    margin-top: 40px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 0 0 8px black;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: white;
 }
 
 .languageInfoBox {
