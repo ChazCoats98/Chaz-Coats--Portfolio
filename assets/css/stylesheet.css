@@ -363,16 +363,16 @@ a {
     border-radius: 15px;
 }
 
-.projectDisplay::before {
-    content: "";
-    background-image: url('./paperTexture.jpg');
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-    border-radius: 15px;
+.projectTextBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.projectTextInner {
+    font-family: 'Cinzel', serif;
 }
 
 .languageInfoBox {
@@ -543,26 +543,37 @@ a {
 #project1Bg {
     position: relative;
     left: -1200px;
-    background-color: #857036;
+    background-image: url("./Project\ BG1.JPG");
     margin-left: 40px;
 }
 
 #project2Bg {
     position: relative;
     right: -1200px;
-    background-color: #655242;
+    background-image: url("./Project\ BG2.JPG");
 }
 
 #project3Bg {
     position: relative;
     left: -1200px;
-    background-color: #45453e;
+    background-image: url("./Project\ BG3.JPG");
 }
 
 #project4Bg {
     position: relative;
     right: -1200px;
-    background-color: #7f432d;
+    background-image: url("./Project\ BG4.JPG");
+}
+
+#project1Display {
+    display: flex;
+    justify-content: end;
+}
+
+#p1img {
+    display: flex;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: -5px 0px 10px -5px black;
 }
 
 #pageWrap {
