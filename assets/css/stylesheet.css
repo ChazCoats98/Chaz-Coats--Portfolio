@@ -391,6 +391,7 @@ a {
 .showButton {
     font-family: 'Cinzel', serif;
     text-shadow: 0 0 8px black;
+    margin: 0%;
     font-weight: 400;
     letter-spacing: 1.6px;
     color: white;
@@ -421,6 +422,18 @@ a {
     font-weight: 400;
     letter-spacing: 1.6px;
     color: white;
+}
+
+.imgRight {
+    display: flex;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: -5px 0px 10px -5px black;
+}
+
+.imgLeft {
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 5px 0px 10px -5px black;
 }
 
 .languageInfoBox {
@@ -622,6 +635,12 @@ a {
     display: flex;
     border-radius: 0px 10px 10px 0px;
     box-shadow: -5px 0px 10px -5px black;
+}
+
+#p2img {
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 5px 0px 10px -5px black;
 }
 
 #pageWrap {
