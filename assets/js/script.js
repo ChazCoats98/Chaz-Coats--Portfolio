@@ -290,4 +290,178 @@ $(document).ready(function () {
         $("#showButton1").show();
         $("#hideButton1").hide();
     });
+
+    $("#showButton2").on("click", function(){
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "80%",
+            marginTop: "20px",
+        });
+        $("#p2img").animate({
+            height: "60%",
+            width: "90%",
+            marginTop: "40px",
+            marginRight: "40px",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px black",
+        });
+        $("#showButton2").hide();
+        $("#hideButton2").show();
+        $("#project2Box").animate({
+            height: "100%",
+        });
+        $("#project3Box").animate({
+            height: "0%",
+        });
+        $("#project4Box").animate({
+            height: "0%",
+        });
+    })
+
+    $("#hideButton2").on("click", function() {
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "100%",
+            marginTop: "0",
+        });
+        $("#p2img").animate({
+            height: "100%",
+            width: "30%",
+            marginTop: "0",
+            marginRight: "0",
+            borderRadius: "0px 10px 10px 0px",
+            boxShadow: "-5px 0px 10px -5px black",
+        });
+        $("#showButton2").show();
+        $("#hideButton2").hide();
+    });
+
+    $("#showButton3").on("click", function(){
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "80%",
+            marginTop: "20px",
+        });
+        $("#p3img").animate({
+            height: "60%",
+            width: "90%",
+            marginTop: "40px",
+            marginRight: "40px",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px black",
+        });
+        $("#showButton3").hide();
+        $("#hideButton3").show();
+        $("#project2Box").animate({
+            height: "0%",
+        });
+        $("#project3Box").animate({
+            height: "100%",
+        });
+        $("#project4Box").animate({
+            height: "0%",
+        });
+    })
+
+    $("#hideButton3").on("click", function() {
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "100%",
+            marginTop: "0",
+        });
+        $("#p3img").animate({
+            height: "100%",
+            width: "30%",
+            marginTop: "0",
+            marginRight: "0",
+            borderRadius: "0px 10px 10px 0px",
+            boxShadow: "-5px 0px 10px -5px black",
+        });
+        $("#showButton3").show();
+        $("#hideButton3").hide();
+    });
+
+    $("#showButton4").on("click", function(){
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "80%",
+            marginTop: "20px",
+        });
+        $("#p4img").animate({
+            height: "60%",
+            width: "90%",
+            marginTop: "40px",
+            marginRight: "40px",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px black",
+        });
+        $("#showButton4").hide();
+        $("#hideButton4").show();
+        $("#project2Box").animate({
+            height: "0%",
+        });
+        $("#project3Box").animate({
+            height: "0%",
+        });
+        $("#project4Box").animate({
+            height: "100%",
+        });
+    })
+
+    $("#hideButton4").on("click", function() {
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "100%",
+            marginTop: "0",
+        });
+        $("#p4img").animate({
+            height: "100%",
+            width: "30%",
+            marginTop: "0",
+            marginRight: "0",
+            borderRadius: "0px 10px 10px 0px",
+            boxShadow: "-5px 0px 10px -5px black",
+        });
+        $("#showButton4").show();
+        $("#hideButton4").hide();
+    });
 });
