@@ -398,6 +398,10 @@ a {
     opacity: .8;
 }
 
+.showButton:hover {
+    cursor: pointer;
+}
+
 .hideButtonAlign {
     display: flex;
     width: 100%;
@@ -412,6 +416,10 @@ a {
     letter-spacing: 1.6px;
     color: white;
     opacity: .8;
+}
+
+.hideButton:hover {
+    cursor: pointer;
 }
 
 .projectTextInner {

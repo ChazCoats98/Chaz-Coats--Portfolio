@@ -303,7 +303,7 @@ $(document).ready(function () {
             height: "60%",
             width: "90%",
             marginTop: "40px",
-            marginRight: "40px",
+            marginLeft: "40px",
             borderRadius: "10px",
             boxShadow: "0 0 10px black",
         });
@@ -341,9 +341,9 @@ $(document).ready(function () {
             height: "100%",
             width: "30%",
             marginTop: "0",
-            marginRight: "0",
+            marginLeft: "0",
             borderRadius: "0px 10px 10px 0px",
-            boxShadow: "-5px 0px 10px -5px black",
+            boxShadow: "5px 0px 10px -5px black",
         });
         $("#showButton2").show();
         $("#hideButton2").hide();
@@ -419,7 +419,7 @@ $(document).ready(function () {
             height: "60%",
             width: "90%",
             marginTop: "40px",
-            marginRight: "40px",
+            marginLeft: "40px",
             borderRadius: "10px",
             boxShadow: "0 0 10px black",
         });
@@ -457,9 +457,9 @@ $(document).ready(function () {
             height: "100%",
             width: "30%",
             marginTop: "0",
-            marginRight: "0",
+            marginLeft: "0",
             borderRadius: "0px 10px 10px 0px",
-            boxShadow: "-5px 0px 10px -5px black",
+            boxShadow: "5px 0px 10px -5px black",
         });
         $("#showButton4").show();
         $("#hideButton4").hide();
