@@ -229,7 +229,103 @@ $(document).ready(function () {
         $("#seeResume").delay(3000).fadeIn("slow");
     });
 
-    $("#project1Display").on("hover", function(){
-        
+    $("#showButton1").on("click", function(){
+        $("#project1Box").animate({
+            height: "100%",
+            fontSize: "0px",
+        });
+        $("#project2Box").animate({
+            height: "0%",
+        });
+        $("#project3Box").animate({
+            height: "0%",
+        });
+        $("#project4Box").animate({
+            height: "0%",
+        });
+    })
+    $("#project2Display").mouseenter(function(){
+        console.log("hover");
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $("#project2Box").animate({
+            height: "100%",
+        });
+        $("#project3Box").animate({
+            height: "0%",
+        });
+        $("#project4Box").animate({
+            height: "0%",
+        });
+    }).mouseleave(function(){
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+    });
+    $("#project3Display").mouseenter(function(){
+        console.log("hover");
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $("#project2Box").animate({
+            height: "0%",
+        });
+        $("#project3Box").animate({
+            height: "100%",
+        });
+        $("#project4Box").animate({
+            height: "0%",
+        });
+    }).mouseleave(function(){
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+    });
+    $("#project4Display").mouseenter(function(){
+        console.log("hover");
+        $("#project1Box").animate({
+            height: "0%",
+        });
+        $("#project2Box").animate({
+            height: "0%",
+        });
+        $("#project3Box").animate({
+            height: "0%",
+        });
+        $("#project4Box").animate({
+            height: "100%",
+        });
+    }).mouseleave(function(){
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
     });
 });

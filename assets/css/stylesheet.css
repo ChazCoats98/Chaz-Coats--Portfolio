@@ -318,6 +318,14 @@ a {
     height: 90%;
 }
 
+.staticProjectsBox {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
 .p2Containers {
     display: flex;
     width: 100%;
@@ -371,7 +379,7 @@ a {
     height: 100%;
 }
 
-.hoverButton {
+.showButton {
     font-family: 'Cinzel', serif;
     text-shadow: 0 0 8px black;
     font-weight: 400;
@@ -532,9 +540,9 @@ a {
     letter-spacing: 1.6px;
 }
 
-#projectsTyped {
+#projectsHeader {
     padding: 0%;
-    margin: 0%;
+    margin: 20px 0 10px 0;
 }
 
 #project1Box {
