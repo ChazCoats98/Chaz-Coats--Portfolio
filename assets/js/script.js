@@ -20,6 +20,7 @@ $(document).ready(function () {
     $("#lang3").hide();
     $("#lang4").hide();
     $("#lang5").hide();
+    $("#hideButton1").hide();
 
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
@@ -232,8 +233,21 @@ $(document).ready(function () {
     $("#showButton1").on("click", function(){
         $("#project1Box").animate({
             height: "100%",
-            fontSize: "0px",
         });
+        $(".projectDisplayInner").animate({
+            height: "80%",
+            marginTop: "20px",
+        });
+        $("#p1img").animate({
+            height: "60%",
+            width: "90%",
+            marginTop: "40px",
+            marginRight: "40px",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px black",
+        });
+        $("#showButton1").hide();
+        $("#hideButton1").show();
         $("#project2Box").animate({
             height: "0%",
         });
@@ -243,6 +257,35 @@ $(document).ready(function () {
         $("#project4Box").animate({
             height: "0%",
         });
+    })
+
+    $("#hideButton1").on("click", function() {
+        $("#project1Box").animate({
+            height: "25%",
+        });
+        $("#project2Box").animate({
+            height: "25%",
+        });
+        $("#project3Box").animate({
+            height: "25%",
+        });
+        $("#project4Box").animate({
+            height: "25%",
+        });
+        $(".projectDisplayInner").animate({
+            height: "100%",
+            marginTop: "0",
+        });
+        $("#p1img").animate({
+            height: "100%",
+            width: "30%",
+            marginTop: "0",
+            marginRight: "0",
+            borderRadius: "0px 10px 10px 0px",
+            boxShadow: "-5px 0px 10px -5px black",
+        });
+        $("#showButton1").show();
+        $("#hideButton1").hide();
     })
     $("#project2Display").mouseenter(function(){
         console.log("hover");

@@ -321,7 +321,7 @@ a {
 .staticProjectsBox {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 84%;
     width: 100%;
     padding-bottom: 40px;
 }
@@ -334,6 +334,7 @@ a {
 
 .projectBg {
     display: flex;
+    flex-direction: column;
     border-radius: 15px;
     box-shadow: 0 0 10px grey;
     width: 950px;
@@ -358,17 +359,25 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 28%;
+    height: 15%;
     margin-bottom: 5px;
 }
 
 .projectDisplay {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.projectDisplayInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
 }
 
 .projectTextBox {
@@ -380,6 +389,22 @@ a {
 }
 
 .showButton {
+    font-family: 'Cinzel', serif;
+    text-shadow: 0 0 8px black;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: white;
+    opacity: .8;
+}
+
+.hideButtonAlign {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+}
+
+.hideButton {
     font-family: 'Cinzel', serif;
     text-shadow: 0 0 8px black;
     font-weight: 400;
