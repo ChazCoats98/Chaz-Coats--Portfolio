@@ -641,13 +641,11 @@ a {
 
 #p1img {
     display: flex;
-    border-radius: 0px 10px 10px 0px;
     box-shadow: -5px 0px 10px -5px black;
 }
 
 #p2img {
     display: flex;
-    border-radius: 10px 0px 0px 10px;
     box-shadow: 5px 0px 10px -5px black;
 }
 

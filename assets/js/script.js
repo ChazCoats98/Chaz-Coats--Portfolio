@@ -251,6 +251,12 @@ $(document).ready(function () {
         });
         $("#showButton1").hide();
         $("#hideButton1").show();
+        $("#p2Header").hide();
+        $("#p3Header").hide();
+        $("#p4Header").hide();
+        $("#showButton2").hide();
+        $("#showButton3").hide();
+        $("#showButton4").hide();
         $("#project2Box").animate({
             height: "0%",
         });
@@ -281,14 +287,19 @@ $(document).ready(function () {
         });
         $("#p1img").animate({
             height: "100%",
-            width: "30%",
+            width: "25%",
             marginTop: "0",
             marginRight: "0",
-            borderRadius: "0px 10px 10px 0px",
-            boxShadow: "-5px 0px 10px -5px black",
         });
+        $("#p1Img").addClass("imgRight");
         $("#showButton1").show();
         $("#hideButton1").hide();
+        $("#p2Header").show();
+        $("#p3Header").show();
+        $("#p4Header").show();
+        $("#showButton2").show();
+        $("#showButton3").show();
+        $("#showButton4").show();
     });
 
     $("#showButton2").on("click", function(){
@@ -309,6 +320,12 @@ $(document).ready(function () {
         });
         $("#showButton2").hide();
         $("#hideButton2").show();
+        $("#p1Header").hide();
+        $("#p3Header").hide();
+        $("#p4Header").hide();
+        $("#showButton1").hide();
+        $("#showButton3").hide();
+        $("#showButton4").hide();
         $("#project2Box").animate({
             height: "100%",
         });
@@ -347,6 +364,12 @@ $(document).ready(function () {
         });
         $("#showButton2").show();
         $("#hideButton2").hide();
+        $("#p1Header").show();
+        $("#p3Header").show();
+        $("#p4Header").show();
+        $("#showButton1").show();
+        $("#showButton3").show();
+        $("#showButton4").show();
     });
 
     $("#showButton3").on("click", function(){
@@ -367,6 +390,12 @@ $(document).ready(function () {
         });
         $("#showButton3").hide();
         $("#hideButton3").show();
+        $("#p1Header").hide();
+        $("#p2Header").hide();
+        $("#p4Header").hide();
+        $("#showButton1").hide();
+        $("#showButton2").hide();
+        $("#showButton4").hide();
         $("#project2Box").animate({
             height: "0%",
         });
@@ -405,6 +434,12 @@ $(document).ready(function () {
         });
         $("#showButton3").show();
         $("#hideButton3").hide();
+        $("#p1Header").show();
+        $("#p2Header").show();
+        $("#p4Header").show();
+        $("#showButton1").show();
+        $("#showButton2").show();
+        $("#showButton4").show();
     });
 
     $("#showButton4").on("click", function(){
@@ -425,6 +460,12 @@ $(document).ready(function () {
         });
         $("#showButton4").hide();
         $("#hideButton4").show();
+        $("#p1Header").hide();
+        $("#p2Header").hide();
+        $("#p3Header").hide();
+        $("#showButton1").hide();
+        $("#showButton2").hide();
+        $("#showButton3").hide();
         $("#project2Box").animate({
             height: "0%",
         });
@@ -463,5 +504,13 @@ $(document).ready(function () {
         });
         $("#showButton4").show();
         $("#hideButton4").hide();
+        $("#showButton3").show();
+        $("#hideButton3").hide();
+        $("#p1Header").show();
+        $("#p2Header").show();
+        $("#p3Header").show();
+        $("#showButton1").show();
+        $("#showButton2").show();
+        $("#showButton3").show();
     });
 });
