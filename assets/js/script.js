@@ -24,6 +24,10 @@ $(document).ready(function () {
     $("#hideButton2").hide();
     $("#hideButton3").hide();
     $("#hideButton4").hide();
+    $("#p1img").hide();
+    $("#p2img").hide();
+    $("#p3img").hide();
+    $("#p4img").hide();
 
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
@@ -236,19 +240,19 @@ $(document).ready(function () {
     $("#showButton1").on("click", function(){
         $("#project1Box").animate({
             height: "100%",
-        });
+            width: "100%",
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "80%",
             marginTop: "20px",
-        });
-        $("#p1img").animate({
-            height: "60%",
-            width: "90%",
-            marginTop: "40px",
-            marginRight: "40px",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px black",
-        });
+        }, 1000, "linear");
+        $("#project1TextBox").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#image1Box").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#p1img").delay(2000).fadeIn(2000);
         $("#showButton1").hide();
         $("#hideButton1").show();
         $("#p2Header").hide();
@@ -259,40 +263,41 @@ $(document).ready(function () {
         $("#showButton4").hide();
         $("#project2Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "0%",
-        });
+        },1000);
     })
 
     $("#hideButton1").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project2Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "100%",
             marginTop: "0",
-        });
-        $("#p1img").animate({
-            height: "100%",
-            width: "25%",
-            marginTop: "0",
-            marginRight: "0",
-        });
-        $("#p1Img").addClass("imgRight");
-        $("#showButton1").show();
+        }, 1000);
+        $("#p1img").fadeOut(600);
+        // $("#p1img").animate({
+        //     height: "100%",
+        //     width: "25%",
+        //     marginTop: "0",
+        //     marginRight: "0",
+        // });
+        $("#p1img").hide();
+        $("#showButton1").fadeIn(1000);
         $("#hideButton1").hide();
         $("#p2Header").show();
         $("#p3Header").show();
@@ -305,11 +310,11 @@ $(document).ready(function () {
     $("#showButton2").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "80%",
             marginTop: "20px",
-        });
+        }, 1000);
         $("#p2img").animate({
             height: "60%",
             width: "90%",
@@ -317,7 +322,7 @@ $(document).ready(function () {
             marginLeft: "40px",
             borderRadius: "10px",
             boxShadow: "0 0 10px black",
-        });
+        }, 1000);
         $("#showButton2").hide();
         $("#hideButton2").show();
         $("#p1Header").hide();
@@ -328,32 +333,32 @@ $(document).ready(function () {
         $("#showButton4").hide();
         $("#project2Box").animate({
             height: "100%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "0%",
-        });
+        }, 1000);
     })
 
     $("#hideButton2").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project2Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "100%",
             marginTop: "0",
-        });
+        }, 1000);
         $("#p2img").animate({
             height: "100%",
             width: "30%",
@@ -375,11 +380,11 @@ $(document).ready(function () {
     $("#showButton3").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "80%",
             marginTop: "20px",
-        });
+        }, 1000);
         $("#p3img").animate({
             height: "60%",
             width: "90%",
@@ -387,7 +392,7 @@ $(document).ready(function () {
             marginRight: "40px",
             borderRadius: "10px",
             boxShadow: "0 0 10px black",
-        });
+        }, 1000);
         $("#showButton3").hide();
         $("#hideButton3").show();
         $("#p1Header").hide();
@@ -398,32 +403,32 @@ $(document).ready(function () {
         $("#showButton4").hide();
         $("#project2Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "100%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "0%",
-        });
+        }, 1000);
     })
 
     $("#hideButton3").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project2Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "100%",
             marginTop: "0",
-        });
+        }, 1000);
         $("#p3img").animate({
             height: "100%",
             width: "30%",
@@ -445,11 +450,11 @@ $(document).ready(function () {
     $("#showButton4").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "80%",
             marginTop: "20px",
-        });
+        }, 1000);
         $("#p4img").animate({
             height: "60%",
             width: "90%",
@@ -468,32 +473,32 @@ $(document).ready(function () {
         $("#showButton3").hide();
         $("#project2Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "0%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "100%",
-        });
+        }, 1000);
     })
 
     $("#hideButton4").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project2Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project3Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $("#project4Box").animate({
             height: "25%",
-        });
+        }, 1000);
         $(".projectDisplayInner").animate({
             height: "100%",
             marginTop: "0",
-        });
+        }, 1000);
         $("#p4img").animate({
             height: "100%",
             width: "30%",

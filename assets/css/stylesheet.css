@@ -325,7 +325,6 @@ a {
     width: 100%;
     padding-bottom: 40px;
 }
-
 .p2Containers {
     display: flex;
     width: 100%;
@@ -383,9 +382,21 @@ a {
 .projectTextBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 70%;
     height: 100%;
+}
+
+.textBoxRight {
+    align-items: end;
+}
+
+.imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 30%;
 }
 
 .showButton {
@@ -434,7 +445,12 @@ a {
 
 .imgRight {
     display: flex;
-    border-radius: 0px 10px 10px 0px;
+    height: 75%;
+    width: 90%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 10px;
     box-shadow: -5px 0px 10px -5px black;
 }
 
