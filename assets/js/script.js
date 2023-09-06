@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //hides all assets later displayed in click functions
     $(".moreInfoBox").hide();
     $("#job1").hide();
     $("#job2").hide();
@@ -33,6 +34,7 @@ $(document).ready(function () {
     $("#project3Description").hide();
     $("#project4Description").hide();
 
+    //sets rules for fullpage API
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
         anchors: ['about', 'projects', 'resume', 'contact'],
@@ -46,6 +48,7 @@ $(document).ready(function () {
         lazyLoading: true,
         onLeave: function (origin, destination, direction) {
             console.log(destination.anchor);
+            //hides/shows upper part of header on 1st page
             if (origin.index == 0 && direction == "down") {
                 $(".headerTop").slideUp("slow");
                 $(".headerText").slideUp("slow");
@@ -54,6 +57,7 @@ $(document).ready(function () {
                 $(".headerText").slideDown("slow");
             }
 
+            //javascript code for the side navigation bar and page index points
             if (destination.anchor == "projects" && direction == "down") {
                 $("#aboutIndex").fadeOut(300);
                 $("#projectsIndex").fadeIn(300);
@@ -144,6 +148,7 @@ $(document).ready(function () {
                 $("#projectsHeader").fadeOut();
             }
         },
+        //initiates resume page animation on page load
         afterLoad: function (origin, destination) {
             if (destination.anchor == "resume") {
                 console.log(destination.anchor);
@@ -159,6 +164,7 @@ $(document).ready(function () {
         }
     });
 
+    //adds functionality for navigation buttons
     $("#currPage").click(function () {
         fullpage_api.moveSectionUp();
     })
@@ -179,6 +185,7 @@ $(document).ready(function () {
         fullpage_api.moveTo("contact");
     });
 
+    //runs aboutme animations
     if ($("#hiMessage").length == 1) {
 
         var typed = new Typed("#hiMessage", {
@@ -221,26 +228,30 @@ $(document).ready(function () {
         });
     }
 
-    $(".restartAbout").on("click", function(){
-        $(".moreInfoBox").hide();
-        $(".restartAbout").hide();
-        $(".typedBox").show();
-        typed.reset();
-        typed.start();
-    });
+    // $(".restartAbout").on("click", function(){
+    //     $(".moreInfoBox").hide();
+    //     $(".restartAbout").hide();
+    //     $(".typedBox").show();
+    //     typed.reset();
+    //     typed.start();
+    // });
 
+    //button for displaying resume
     $("#seeResume").on("click", function(){
         $(".languageInfoBox").fadeOut("slow");
         $(".resumeBox").delay(1000).fadeIn("slow");
         $("#seeLanguages").delay(3000).fadeIn("slow");
     });
 
+    //button for displaying at a glance language page
     $("#seeLanguages").on("click", function(){
         $(".resumeBox").fadeOut("slow");
         $(".languageInfoBox").delay(1000).fadeIn("slow");
         $("#seeResume").delay(3000).fadeIn("slow");
     });
 
+    //code for project boxes on projects page
+    //expands project 1 box an displays project description and image
     $("#showButton1").on("click", function(){
         $("#project1Box").animate({
             height: "100%",
@@ -280,6 +291,7 @@ $(document).ready(function () {
         },1000);
     })
 
+    //reverses all effects of the expand button
     $("#hideButton1").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
@@ -318,6 +330,7 @@ $(document).ready(function () {
         $("#showButton4").delay(1000).fadeIn(600);
     });
 
+    //expands project 2 box an displays project description and image
     $("#showButton2").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
@@ -357,6 +370,7 @@ $(document).ready(function () {
         }, 1000);
     })
 
+    //reverses all effects of the expand button
     $("#hideButton2").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
@@ -395,6 +409,7 @@ $(document).ready(function () {
         $("#showButton4").delay(1000).fadeIn(600);
     });
 
+    //expands project 3 box an displays project description and image
     $("#showButton3").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
@@ -429,6 +444,7 @@ $(document).ready(function () {
         }, 1000);
     })
 
+    //reverses all effects of the expand button
     $("#hideButton3").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
@@ -463,6 +479,7 @@ $(document).ready(function () {
         $("#showButton4").delay(1000).fadeIn(600);
     });
 
+    //expands project 4 box an displays project description and image
     $("#showButton4").on("click", function(){
         $("#project1Box").animate({
             height: "0%",
@@ -497,6 +514,7 @@ $(document).ready(function () {
         }, 1000);
     })
 
+    //reverses all effects of the expand button
     $("#hideButton4").on("click", function() {
         $("#project1Box").animate({
             height: "25%",
