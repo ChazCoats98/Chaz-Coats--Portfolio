@@ -386,8 +386,29 @@ a {
     height: 100%;
 }
 
+.projectDescription {
+    display: flex;
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-align: justify;
+    text-shadow: 0 0 10px black;
+    margin-right: 50px;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    width: 70%;
+}
+
+.projectDescriptionLeft {
+    margin-left: 70px;
+}
+
 .textBoxRight {
     align-items: end;
+}
+
+.textBoxLeft {
+    align-items: start;
 }
 
 .imageBox {
@@ -408,6 +429,15 @@ a {
     color: white;
     opacity: .8;
 }
+
+.showButtonRight {
+    margin-right: 100px;
+}
+
+.showButtonLeft {
+    margin-left: 100px;
+}
+
 
 .showButton:hover {
     cursor: pointer;
@@ -443,7 +473,7 @@ a {
     color: white;
 }
 
-.imgRight {
+.projectImg {
     display: flex;
     height: 75%;
     width: 90%;
@@ -451,13 +481,7 @@ a {
     margin-right: 0px;
     margin-left: 0px;
     border-radius: 10px;
-    box-shadow: -5px 0px 10px -5px black;
-}
-
-.imgLeft {
-    display: flex;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow: 5px 0px 10px -5px black;
+    box-shadow: 0 0 8px rgb(75, 72, 72);
 }
 
 .languageInfoBox {
@@ -544,6 +568,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: contactDisplay;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     width: 40%;
     height: 60%;
     background-image: url("./Background\ 4.jpg");
@@ -655,16 +683,6 @@ a {
     justify-content: end;
 }
 
-#p1img {
-    display: flex;
-    box-shadow: -5px 0px 10px -5px black;
-}
-
-#p2img {
-    display: flex;
-    box-shadow: 5px 0px 10px -5px black;
-}
-
 #pageWrap {
     width: 100%;
     height: 100%;
@@ -747,6 +765,20 @@ a {
 }
 
 @keyframes moreInfoBox {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes contactDisplay {
     0% {
         transform: translate(0, 0px);
     }

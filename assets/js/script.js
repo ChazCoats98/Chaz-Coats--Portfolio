@@ -28,6 +28,10 @@ $(document).ready(function () {
     $("#p2img").hide();
     $("#p3img").hide();
     $("#p4img").hide();
+    $("#project1Description").hide();
+    $("#project2Description").hide();
+    $("#project3Description").hide();
+    $("#project4Description").hide();
 
     $('#panelWrap').fullpage({
         menu: '#myNavbar',
@@ -252,9 +256,13 @@ $(document).ready(function () {
         $("#image1Box").animate({
             width: "50%",
         }, 1000, "linear");
-        $("#p1img").delay(2000).fadeIn(2000);
+        $("#p1Header").animate({
+            marginRight: "45px",
+        }, 1000, "linear");
+        $("#p1img").delay(1200).fadeIn(1000);
+        $("#project1Description").delay(1200).fadeIn(1000);
         $("#showButton1").hide();
-        $("#hideButton1").show();
+        $("#hideButton1").delay(1200).fadeIn(1000);
         $("#p2Header").hide();
         $("#p3Header").hide();
         $("#p4Header").hide();
@@ -289,22 +297,25 @@ $(document).ready(function () {
             height: "100%",
             marginTop: "0",
         }, 1000);
-        $("#p1img").fadeOut(600);
-        // $("#p1img").animate({
-        //     height: "100%",
-        //     width: "25%",
-        //     marginTop: "0",
-        //     marginRight: "0",
-        // });
+        $("#p1Header").animate({
+            marginRight: "0px",
+        }, 1000, "linear");
+        $("#project1TextBox").animate({
+            width: "70%",
+        }, 1000, "linear");
+        $("#image1Box").animate({
+            width: "30%",
+        }, 1000, "linear");
         $("#p1img").hide();
-        $("#showButton1").fadeIn(1000);
+        $("#project1Description").hide();
+        $("#showButton1").delay(1000).fadeIn(600);
         $("#hideButton1").hide();
-        $("#p2Header").show();
-        $("#p3Header").show();
-        $("#p4Header").show();
-        $("#showButton2").show();
-        $("#showButton3").show();
-        $("#showButton4").show();
+        $("#p2Header").delay(1000).fadeIn(600);
+        $("#p3Header").delay(1000).fadeIn(600);
+        $("#p4Header").delay(1000).fadeIn(600);
+        $("#showButton2").delay(1000).fadeIn(600);
+        $("#showButton3").delay(1000).fadeIn(600);
+        $("#showButton4").delay(1000).fadeIn(600);
     });
 
     $("#showButton2").on("click", function(){
@@ -314,17 +325,20 @@ $(document).ready(function () {
         $(".projectDisplayInner").animate({
             height: "80%",
             marginTop: "20px",
-        }, 1000);
-        $("#p2img").animate({
-            height: "60%",
-            width: "90%",
-            marginTop: "40px",
-            marginLeft: "40px",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px black",
-        }, 1000);
+        }, 1000, "linear");
+        $("#project2TextBox").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#image2Box").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#p2Header").animate({
+            marginLeft: "45px",
+        }, 1000, "linear");
+        $("#project2Description").delay(1200).fadeIn(1000);
+        $("#p2img").delay(1200).fadeIn(1000);
         $("#showButton2").hide();
-        $("#hideButton2").show();
+        $("#hideButton2").delay(1200).fadeIn(1000);
         $("#p1Header").hide();
         $("#p3Header").hide();
         $("#p4Header").hide();
@@ -333,6 +347,7 @@ $(document).ready(function () {
         $("#showButton4").hide();
         $("#project2Box").animate({
             height: "100%",
+            width: "100%",
         }, 1000);
         $("#project3Box").animate({
             height: "0%",
@@ -359,22 +374,25 @@ $(document).ready(function () {
             height: "100%",
             marginTop: "0",
         }, 1000);
-        $("#p2img").animate({
-            height: "100%",
+        $("#project2TextBox").animate({
+            width: "70%",
+        }, 1000, "linear");
+        $("#psHeader").animate({
+            marginRight: "0px",
+        }, 1000, "linear");
+        $("#image2Box").animate({
             width: "30%",
-            marginTop: "0",
-            marginLeft: "0",
-            borderRadius: "0px 10px 10px 0px",
-            boxShadow: "5px 0px 10px -5px black",
-        });
-        $("#showButton2").show();
+        }, 1000, "linear");
+        $("#p2img").hide();
+        $("#project2Description").hide();
+        $("#showButton2").delay(1000).fadeIn(600);
         $("#hideButton2").hide();
-        $("#p1Header").show();
-        $("#p3Header").show();
-        $("#p4Header").show();
-        $("#showButton1").show();
-        $("#showButton3").show();
-        $("#showButton4").show();
+        $("#p1Header").delay(1000).fadeIn(600);
+        $("#p3Header").delay(1000).fadeIn(600);
+        $("#p4Header").delay(1000).fadeIn(600);
+        $("#showButton1").delay(1000).fadeIn(600);
+        $("#showButton3").delay(1000).fadeIn(600);
+        $("#showButton4").delay(1000).fadeIn(600);
     });
 
     $("#showButton3").on("click", function(){
@@ -385,21 +403,20 @@ $(document).ready(function () {
             height: "80%",
             marginTop: "20px",
         }, 1000);
-        $("#p3img").animate({
-            height: "60%",
-            width: "90%",
-            marginTop: "40px",
-            marginRight: "40px",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px black",
-        }, 1000);
-        $("#showButton3").hide();
-        $("#hideButton3").show();
+        $("#project3TextBox").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#image3Box").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#p3img").delay(1200).fadeIn(1000);
+        $("#hideButton3").delay(1200).fadeIn(1000);
         $("#p1Header").hide();
         $("#p2Header").hide();
         $("#p4Header").hide();
         $("#showButton1").hide();
         $("#showButton2").hide();
+        $("#showButton3").hide();
         $("#showButton4").hide();
         $("#project2Box").animate({
             height: "0%",
@@ -429,22 +446,21 @@ $(document).ready(function () {
             height: "100%",
             marginTop: "0",
         }, 1000);
-        $("#p3img").animate({
-            height: "100%",
+        $("#project3TextBox").animate({
+            width: "70%",
+        }, 1000, "linear");
+        $("#image3Box").animate({
             width: "30%",
-            marginTop: "0",
-            marginRight: "0",
-            borderRadius: "0px 10px 10px 0px",
-            boxShadow: "-5px 0px 10px -5px black",
-        });
-        $("#showButton3").show();
+        }, 1000, "linear");
+        $("#p3img").hide();
+        $("#showButton3").delay(1000).fadeIn(600);
         $("#hideButton3").hide();
-        $("#p1Header").show();
-        $("#p2Header").show();
-        $("#p4Header").show();
-        $("#showButton1").show();
-        $("#showButton2").show();
-        $("#showButton4").show();
+        $("#p1Header").delay(1000).fadeIn(600);
+        $("#p2Header").delay(1000).fadeIn(600);
+        $("#p4Header").delay(1000).fadeIn(600);
+        $("#showButton1").delay(1000).fadeIn(600);
+        $("#showButton2").delay(1000).fadeIn(600);
+        $("#showButton4").delay(1000).fadeIn(600);
     });
 
     $("#showButton4").on("click", function(){
@@ -455,16 +471,15 @@ $(document).ready(function () {
             height: "80%",
             marginTop: "20px",
         }, 1000);
-        $("#p4img").animate({
-            height: "60%",
-            width: "90%",
-            marginTop: "40px",
-            marginLeft: "40px",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px black",
-        });
+        $("#project4TextBox").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#image4Box").animate({
+            width: "50%",
+        }, 1000, "linear");
+        $("#p4img").delay(1200).fadeIn(1000);
         $("#showButton4").hide();
-        $("#hideButton4").show();
+        $("#hideButton4").delay(1200).fadeIn(1000);
         $("#p1Header").hide();
         $("#p2Header").hide();
         $("#p3Header").hide();
@@ -499,23 +514,20 @@ $(document).ready(function () {
             height: "100%",
             marginTop: "0",
         }, 1000);
-        $("#p4img").animate({
-            height: "100%",
+        $("#project4TextBox").animate({
+            width: "70%",
+        }, 1000, "linear");
+        $("#image4Box").animate({
             width: "30%",
-            marginTop: "0",
-            marginLeft: "0",
-            borderRadius: "0px 10px 10px 0px",
-            boxShadow: "5px 0px 10px -5px black",
-        });
-        $("#showButton4").show();
+        }, 1000, "linear");
+        $("#p4img").hide();
+        $("#showButton4").delay(1000).fadeIn(600);
         $("#hideButton4").hide();
-        $("#showButton3").show();
-        $("#hideButton3").hide();
-        $("#p1Header").show();
-        $("#p2Header").show();
-        $("#p3Header").show();
-        $("#showButton1").show();
-        $("#showButton2").show();
-        $("#showButton3").show();
+        $("#p1Header").delay(1000).fadeIn(600);
+        $("#p2Header").delay(1000).fadeIn(600);
+        $("#p3Header").delay(1000).fadeIn(600);
+        $("#showButton1").delay(1000).fadeIn(600);
+        $("#showButton2").delay(1000).fadeIn(600);
+        $("#showButton3").delay(1000).fadeIn(600);
     });
 });
