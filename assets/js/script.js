@@ -33,6 +33,8 @@ $(document).ready(function () {
     $("#project2Description").hide();
     $("#project3Description").hide();
     $("#project4Description").hide();
+    $("#p1Button").hide();
+    $("#p2Button").hide();
 
     //sets rules for fullpage API
     $('#panelWrap').fullpage({
@@ -274,6 +276,7 @@ $(document).ready(function () {
         $("#project1Description").delay(1200).fadeIn(1000);
         $("#showButton1").hide();
         $("#hideButton1").delay(1200).fadeIn(1000);
+        $("#p1Button").delay(1200).fadeIn(1000);
         $("#p2Header").hide();
         $("#p3Header").hide();
         $("#p4Header").hide();
@@ -319,6 +322,7 @@ $(document).ready(function () {
             width: "30%",
         }, 1000, "linear");
         $("#p1img").hide();
+        $("#p1Button").hide();
         $("#project1Description").hide();
         $("#showButton1").delay(1000).fadeIn(600);
         $("#hideButton1").hide();
@@ -352,6 +356,7 @@ $(document).ready(function () {
         $("#p2img").delay(1200).fadeIn(1000);
         $("#showButton2").hide();
         $("#hideButton2").delay(1200).fadeIn(1000);
+        $("#p2Button").delay(1200).fadeIn(1000);
         $("#p1Header").hide();
         $("#p3Header").hide();
         $("#p4Header").hide();
@@ -398,6 +403,7 @@ $(document).ready(function () {
             width: "30%",
         }, 1000, "linear");
         $("#p2img").hide();
+        $("#p2Button").hide();
         $("#project2Description").hide();
         $("#showButton2").delay(1000).fadeIn(600);
         $("#hideButton2").hide();
