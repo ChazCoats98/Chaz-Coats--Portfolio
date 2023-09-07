@@ -1,11 +1,15 @@
-This website is a portfolio for all my programming work. 
-The goal is to display my work in a clean, organized, and visually pleasing way. 
-I used everyhing I learned using CSS and HTML to create this page. 
-I had difficulty with responsive design and i dont feel like the look is where i want it to be. I plan to work on it a bit more and resubmit.
-
+# Portfolio
+## Description
+This is it! my portfolio. I wanted to make a somewhat unique way to display my work as well as my resume. As we all know, its a challenge to describe yourself in words. For this reason, I aimed to demonstrate my skills rather than just write them.
+## Future Improvements 
+There are a few things that could use some polishing and detail work. I also plan on cleaning up the code a bit. Some code is not used, some code isn't structured the way I want. I decided to leave it here for now as I want to work on projects to add to it and I plan on applying to jobs soon. 
+## Links
+Repository: https://github.com/ChazCoats98/Chaz-Coats--Portfolio
 website: https://chazcoats98.github.io/Chaz-Coats--Portfolio/
-
-![Example1](./assets/Examples/Example%201.PNG)
-![example2](./assets/Examples/Example%202.PNG)
-![example3](./assets/Examples/Example%203.PNG)
-![example4](./assets/Examples/Example%204.PNG)
+## Examples 
+![Example1](./assets/Examples/Page%201.JPG)
+![example2](./assets/Examples/Page%202-1.JPG)
+![example3](./assets/Examples/Page%202-2.JPG)
+![example4](./assets/Examples/Page%203-1.JPG)
+![example4](./assets/Examples/Page%203-2.JPG)
+![example4](./assets/Examples/Page%204.JPG)
