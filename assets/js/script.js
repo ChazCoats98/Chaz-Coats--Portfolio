@@ -35,6 +35,7 @@ $(document).ready(function () {
     $("#project4Description").hide();
     $("#p1Button").hide();
     $("#p2Button").hide();
+    $("#p3Button").hide();
 
     //sets rules for fullpage API
     $('#panelWrap').fullpage({
@@ -432,6 +433,8 @@ $(document).ready(function () {
         }, 1000, "linear");
         $("#p3img").delay(1200).fadeIn(1000);
         $("#hideButton3").delay(1200).fadeIn(1000);
+        $("#project3Description").delay(1200).fadeIn(1000);
+        $("#p3Button").delay(1200).fadeIn(1000);
         $("#p1Header").hide();
         $("#p2Header").hide();
         $("#p4Header").hide();
@@ -475,8 +478,10 @@ $(document).ready(function () {
             width: "30%",
         }, 1000, "linear");
         $("#p3img").hide();
+        $("#p3Button").hide();
         $("#showButton3").delay(1000).fadeIn(600);
         $("#hideButton3").hide();
+        $("#project3Description").hide();
         $("#p1Header").delay(1000).fadeIn(600);
         $("#p2Header").delay(1000).fadeIn(600);
         $("#p4Header").delay(1000).fadeIn(600);

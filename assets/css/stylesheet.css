@@ -679,6 +679,14 @@ a {
     justify-content: end;
 }
 
+#p3Header {
+    margin-right: 60px;
+}
+
+#p4Header {
+    margin-left: 60px;
+}
+
 #project1Bg {
     position: relative;
     left: -1200px;
@@ -786,6 +794,11 @@ a {
 #p2Button {
     background-color: #7f432d;
     margin-left: 180px;
+}
+
+#p3Button {
+    background-color: #655242;
+    margin-right: 180px;
 }
 
 #emailBtn {
